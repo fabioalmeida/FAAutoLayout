@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FAAutoLayout_Example' do
+  pod 'FAAutoLayout', :path => '../'
+
+  target 'FAAutoLayout_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

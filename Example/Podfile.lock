@@ -1,0 +1,16 @@
+PODS:
+  - FAAutoLayout (0.1.0)
+
+DEPENDENCIES:
+  - FAAutoLayout (from `../`)
+
+EXTERNAL SOURCES:
+  FAAutoLayout:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FAAutoLayout: dd7c45492cebda64be843b0254612297e8df2d04
+
+PODFILE CHECKSUM: 2b983cd25f2ddb52d04688e1367aac50c5fd6bb5
+
+COCOAPODS: 1.2.1
