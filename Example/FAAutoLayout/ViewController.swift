@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  FAAutoLayout
 //
-//  Created by fabioalmeida on 06/12/2017.
-//  Copyright (c) 2017 fabioalmeida. All rights reserved.
+//  Created by Fábio Almeida on 12/06/2017
+//  Copyright (c) 2017 Fábio Almeida. All rights reserved.
 //
 
 import UIKit
