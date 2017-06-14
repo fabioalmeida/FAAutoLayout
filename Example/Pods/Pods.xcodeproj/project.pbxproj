@@ -12,10 +12,10 @@
 		2D84B77DBCD2553513B0F9BDFF454332 /* Pods-FAAutoLayout_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E02D9D454688FEC920E2258D2B91016 /* Pods-FAAutoLayout_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		975003212295ADA8327C4EA35FE49982 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9A720412EBB2EFC2A3B320B6065F6DF4 /* Pods-FAAutoLayout_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3023D294D2572B86A76F81798D9963 /* Pods-FAAutoLayout_Example-dummy.m */; };
+		AE8839FE1EF1F21C0013513E /* NSLayoutConstraint+FAAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8839FD1EF1F21C0013513E /* NSLayoutConstraint+FAAutoLayout.swift */; };
 		BB93B10AE4B8337513DB82E7B733CD0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		CA37EAAA105E40AC1D57871AEE7A4A6A /* FAAutoLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D049BF3B417F369E430B16245BBC6A /* FAAutoLayout-dummy.m */; };
 		CEDF3A5EBC84D533CD6DC5B00D4860BB /* FAAutoLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25472BBEC2B16C801C8DA00D99C3E895 /* FAAutoLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED7F78FFEE0C2C9B267FAC3857202FB1 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAB868577469808677DB21DECE96F8D /* ReplaceMe.swift */; };
 		F18ADAC4D06FBDA85E807C15135913BD /* Pods-FAAutoLayout_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3415432D73D0AA0F5ADE7A44FC4EEB6A /* Pods-FAAutoLayout_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -36,8 +36,7 @@
 		0D045DCC5995863D7EA7CF064EC21D5E /* Pods-FAAutoLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FAAutoLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0ED68169A818B6C2B7F54D44979903B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25472BBEC2B16C801C8DA00D99C3E895 /* FAAutoLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FAAutoLayout-umbrella.h"; sourceTree = "<group>"; };
-		275A79A79EC7842318C1F51832F9F96A /* Pods_FAAutoLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FAAutoLayout_Tests.framework; path = "Pods-FAAutoLayout_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FAB868577469808677DB21DECE96F8D /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		275A79A79EC7842318C1F51832F9F96A /* Pods_FAAutoLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FAAutoLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3415432D73D0AA0F5ADE7A44FC4EEB6A /* Pods-FAAutoLayout_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FAAutoLayout_Example-umbrella.h"; sourceTree = "<group>"; };
 		385975BE7B259F5366880B485A9AD081 /* Pods-FAAutoLayout_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FAAutoLayout_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3A8AB2B6F5E7734B464F49ED133AE3A9 /* FAAutoLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FAAutoLayout.xcconfig; sourceTree = "<group>"; };
@@ -45,21 +44,22 @@
 		4096025E3424F96DAA70F4471AC09070 /* FAAutoLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FAAutoLayout-prefix.pch"; sourceTree = "<group>"; };
 		4BE12F14E0301C8EF4CF1417498A79A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		531D2F0923E3BBDFA018901A8C2CFAEF /* Pods-FAAutoLayout_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FAAutoLayout_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		5D82A759C646285E8D1C22D7372BBB32 /* Pods-FAAutoLayout_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FAAutoLayout_Tests.modulemap"; sourceTree = "<group>"; };
+		5D82A759C646285E8D1C22D7372BBB32 /* Pods-FAAutoLayout_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FAAutoLayout_Tests.modulemap"; sourceTree = "<group>"; };
 		6299EEA3DFFB5ACEFA3B5B8AAF95F45B /* Pods-FAAutoLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FAAutoLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		63B28EFD6791D151A1AF5DF6AC61EA39 /* Pods-FAAutoLayout_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FAAutoLayout_Tests-resources.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		66FFC9D10D69ADA2F135160E401A1E0E /* Pods-FAAutoLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FAAutoLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6B73FDAE9F057B11005E89D063A6DB90 /* FAAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FAAutoLayout.framework; path = FAAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B73FDAE9F057B11005E89D063A6DB90 /* FAAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FAAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C3494B216B3461086D81F5388643B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C2309F910EA88609B86EF5806686C21 /* Pods-FAAutoLayout_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FAAutoLayout_Tests-dummy.m"; sourceTree = "<group>"; };
-		8EAFB8538266A3DD5D7EA934DAC8AEDE /* Pods_FAAutoLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FAAutoLayout_Example.framework; path = "Pods-FAAutoLayout_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8EAFB8538266A3DD5D7EA934DAC8AEDE /* Pods_FAAutoLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FAAutoLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A4FDC39B1D166EE4EF04F91ABDFDBBAA /* Pods-FAAutoLayout_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FAAutoLayout_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AB3023D294D2572B86A76F81798D9963 /* Pods-FAAutoLayout_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FAAutoLayout_Example-dummy.m"; sourceTree = "<group>"; };
 		ABD9A9FBEA9226FFEFF0F1C1D7D5DA63 /* Pods-FAAutoLayout_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FAAutoLayout_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		B54BF83826E0EDD6FFA7067F7A2744D4 /* Pods-FAAutoLayout_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FAAutoLayout_Example.modulemap"; sourceTree = "<group>"; };
-		CD19EFDC0F574B8F3D4CC1556FC03EFF /* FAAutoLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FAAutoLayout.modulemap; sourceTree = "<group>"; };
+		AE8839FD1EF1F21C0013513E /* NSLayoutConstraint+FAAutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+FAAutoLayout.swift"; sourceTree = "<group>"; };
+		B54BF83826E0EDD6FFA7067F7A2744D4 /* Pods-FAAutoLayout_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FAAutoLayout_Example.modulemap"; sourceTree = "<group>"; };
+		CD19EFDC0F574B8F3D4CC1556FC03EFF /* FAAutoLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FAAutoLayout.modulemap; sourceTree = "<group>"; };
 		D0C77E95571232694A7BDF3E85535840 /* Pods-FAAutoLayout_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FAAutoLayout_Example-frameworks.sh"; sourceTree = "<group>"; };
 		FFAFC51A94026B44CB9BC4256DED8871 /* Pods-FAAutoLayout_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FAAutoLayout_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,9 +169,8 @@
 		B39359D9754DC1DB918B4EF4C220DAF3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2FAB868577469808677DB21DECE96F8D /* ReplaceMe.swift */,
+				AE8839FD1EF1F21C0013513E /* NSLayoutConstraint+FAAutoLayout.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -210,7 +209,6 @@
 			children = (
 				B39359D9754DC1DB918B4EF4C220DAF3 /* Classes */,
 			);
-			name = FAAutoLayout;
 			path = FAAutoLayout;
 			sourceTree = "<group>";
 		};
@@ -348,7 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA37EAAA105E40AC1D57871AEE7A4A6A /* FAAutoLayout-dummy.m in Sources */,
-				ED7F78FFEE0C2C9B267FAC3857202FB1 /* ReplaceMe.swift in Sources */,
+				AE8839FE1EF1F21C0013513E /* NSLayoutConstraint+FAAutoLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
