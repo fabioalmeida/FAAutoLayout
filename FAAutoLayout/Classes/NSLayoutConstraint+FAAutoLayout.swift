@@ -89,8 +89,7 @@ extension NSLayoutConstraint {
                                                    toAttribute: toAttribute,
                                                    relatedBy: relation,
                                                    multiplier: m,
-                                                   constant: c
-                )
+                                                   constant: c)
     }
     
     public class func centerHorizontallyConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
