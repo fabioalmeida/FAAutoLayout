@@ -6,7 +6,6 @@
 //  Copyright (c) 2017 Fábio Almeida. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 // MARK: - Internal

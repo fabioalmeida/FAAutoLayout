@@ -13,6 +13,7 @@
 		975003212295ADA8327C4EA35FE49982 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9A720412EBB2EFC2A3B320B6065F6DF4 /* Pods-FAAutoLayout_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3023D294D2572B86A76F81798D9963 /* Pods-FAAutoLayout_Example-dummy.m */; };
 		AE8839FE1EF1F21C0013513E /* NSLayoutConstraint+FAAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8839FD1EF1F21C0013513E /* NSLayoutConstraint+FAAutoLayout.swift */; };
+		AEBC35AE1EF48BFB000336A6 /* UIView+FAAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC35AD1EF48BFB000336A6 /* UIView+FAAutoLayout.swift */; };
 		BB93B10AE4B8337513DB82E7B733CD0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		CA37EAAA105E40AC1D57871AEE7A4A6A /* FAAutoLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D049BF3B417F369E430B16245BBC6A /* FAAutoLayout-dummy.m */; };
 		CEDF3A5EBC84D533CD6DC5B00D4860BB /* FAAutoLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25472BBEC2B16C801C8DA00D99C3E895 /* FAAutoLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -58,6 +59,7 @@
 		AB3023D294D2572B86A76F81798D9963 /* Pods-FAAutoLayout_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FAAutoLayout_Example-dummy.m"; sourceTree = "<group>"; };
 		ABD9A9FBEA9226FFEFF0F1C1D7D5DA63 /* Pods-FAAutoLayout_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FAAutoLayout_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		AE8839FD1EF1F21C0013513E /* NSLayoutConstraint+FAAutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+FAAutoLayout.swift"; sourceTree = "<group>"; };
+		AEBC35AD1EF48BFB000336A6 /* UIView+FAAutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FAAutoLayout.swift"; sourceTree = "<group>"; };
 		B54BF83826E0EDD6FFA7067F7A2744D4 /* Pods-FAAutoLayout_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FAAutoLayout_Example.modulemap"; sourceTree = "<group>"; };
 		CD19EFDC0F574B8F3D4CC1556FC03EFF /* FAAutoLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FAAutoLayout.modulemap; sourceTree = "<group>"; };
 		D0C77E95571232694A7BDF3E85535840 /* Pods-FAAutoLayout_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FAAutoLayout_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				AE8839FD1EF1F21C0013513E /* NSLayoutConstraint+FAAutoLayout.swift */,
+				AEBC35AD1EF48BFB000336A6 /* UIView+FAAutoLayout.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			files = (
 				CA37EAAA105E40AC1D57871AEE7A4A6A /* FAAutoLayout-dummy.m in Sources */,
 				AE8839FE1EF1F21C0013513E /* NSLayoutConstraint+FAAutoLayout.swift in Sources */,
+				AEBC35AE1EF48BFB000336A6 /* UIView+FAAutoLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
