@@ -69,7 +69,7 @@ topLeftView.constrainWidth(150.0)
 topLeftView.constrainHeight(45.0)
 ```
 
-If we want to define relations between to views on the same hierarchy level (i.e. share the same `superview`) we can define, for instance, one horizontal spacing constraint between them:
+If we want to define relations between two views on the same hierarchy level (i.e. share the same `superview`) we can define, for instance, one horizontal spacing constraint between them:
 
 ```swift
 let topRightView = UIView()
@@ -179,7 +179,7 @@ But you can also specify a constant if you want to add a margin:
 myView.constrainTopSpaceToContainer(20.0)
 ```
 
-However, if you want to specify the other parameters like the `NSLayoutRelation` or `UILayoutPriority` you can also to the following in only one line:
+However, if you want to specify the other parameters like the `NSLayoutRelation` or `UILayoutPriority` you can also do the following in only one line:
 
 ```swift
 myView.constrainTopSpaceToContainer(20.0, relation: .greaterThanOrEqual, priority: UILayoutPriorityRequired, multiplier: 0.7)
