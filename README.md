@@ -30,7 +30,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'TargetName' do
-  pod 'FAAutoLayout', '~> 0.1.0'
+  pod 'FAAutoLayout'
 end
 ```
 
