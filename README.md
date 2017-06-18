@@ -9,7 +9,7 @@ FAAutoLayout is a compact [Auto Layout](https://developer.apple.com/library/cont
 
 This lightweight library was designed thinking about the people who like to create their interfaces without using storyboards of XIB files, helping to remove the excess of boilerplate code when it comes to defining the layout constraints.
 
-The naming used was thought to make the library adoption super fast to everyone that is already used to add constraints using the interface builder. For more detailed examples please check the [Usage](##Usage) section.
+The naming used was thought to make the library adoption super fast to everyone that is already used to add constraints using the interface builder. For more detailed examples please check the [Usage](#usage) section.
 
 
 ## Requirements
@@ -92,7 +92,7 @@ let heightConstraint = topLeftView.constrainHeight(45.0)
 heightConstraint.constant = 80.0
 ```
 
-On the previous examples, lots of constraints were being added in relation with a container view. Nevertheless, it is also possible to create these relations to other view that is on top of the container view hierarchy chain.
+On the previous examples, lots of constraints were being added in relation with a container view. Nevertheless, it is also possible to create these relations to other view that is above on the container view hierarchy chain:
 
 ```swift
 // container view that will sit below topLeftView
@@ -122,7 +122,7 @@ containerView2.addSubview(containerView3)
 containerView3.fill(view: containerView1, constant: 20.0)
 ```
 
-In some other cases we need to create our views programmatically because they may depend on some business rule and so they must be created dynamically. On the next example you can see 2 `UIView` class methods that allow to add constraints to an Array of UIViews with one single function call:
+In some other cases we need to create our views programmatically because their number might be dynamic depending on some business logic. On the next example you can see 2 `UIView` class methods that allow to add constraints to an Array of UIViews with one single function call:
 
 ```swift
 let dynamicNumberOfViews = 5
@@ -153,7 +153,7 @@ All these examples can be found on the repository "Examples" project.
 
 ## Structure
 
-The main types of constraint you can add are the following:
+The main types of constraints you can add are the following:
 
 - Leading
 - Trailing
