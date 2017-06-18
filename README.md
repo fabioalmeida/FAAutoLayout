@@ -188,7 +188,7 @@ myView.constrainTopSpaceToContainer(20.0, relation: .greaterThanOrEqual, priorit
 
 ## Author
 
-If you want to get it touch, reach me on twitter: [@fabioacalmeida](https://twitter.com/fabioacalmeida)
+If you want to get in touch, reach me on twitter: [@fabioacalmeida](https://twitter.com/fabioacalmeida)
 
 
 ## License
