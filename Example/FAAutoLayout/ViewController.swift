@@ -36,9 +36,9 @@ class ViewController: UIViewController {
         backgroundView.addSubview(topLeftView)
 
         topLeftView.constrainLeadingSpaceToContainer()
-        topLeftView.constrainTopSpaceToContainer(10.0)
-        topLeftView.constrainWidth(150.0)
-        topLeftView.constrainHeight(45.0)
+        topLeftView.constrainTopSpaceToContainer(10)
+        topLeftView.constrainWidth(150)
+        topLeftView.constrainHeight(45)
 
 
         // view that is positioned on the right on relation with topLeftView
@@ -46,10 +46,10 @@ class ViewController: UIViewController {
         topRightView.backgroundColor = .red
         backgroundView.addSubview(topRightView)
 
-        topRightView.constrainTopSpaceToContainer(10.0)
-        topRightView.constrainTrailingSpaceToContainer(30.0)
-        topRightView.constrainHorizontalSpacing(toView: topLeftView, constant: 20.0)
-        topRightView.constrainEqualHeight(toView: topLeftView, constant: 0, relation: .equal, priority: UILayoutPriorityRequired, multiplier: 2.0)
+        topRightView.constrainTopSpaceToContainer(10)
+        topRightView.constrainTrailingSpaceToContainer(30)
+        topRightView.constrainHorizontalSpacing(toView: topLeftView, constant: 20)
+        topRightView.constrainEqualHeight(toView: topLeftView, constant: 0, relation: .equal, priority: UILayoutPriorityRequired, multiplier: 2)
 
 
         // container view that will sit below topLeftView
@@ -57,10 +57,10 @@ class ViewController: UIViewController {
         containerView1.backgroundColor = .green
         backgroundView.addSubview(containerView1)
 
-        containerView1.constrainWidth(200.0)
-        containerView1.constrainHeight(200.0)
-        containerView1.constrainVerticalSpacing(toView: topLeftView, constant: 100.0)
-        containerView1.constrainLeadingSpaceToContainer(10.0)
+        containerView1.constrainWidth(200)
+        containerView1.constrainHeight(200)
+        containerView1.constrainVerticalSpacing(toView: topLeftView, constant: 100)
+        containerView1.constrainLeadingSpaceToContainer(10)
 
 
         // view that will adapt to containerView1
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         containerView2.backgroundColor = .black
         containerView1.addSubview(containerView2)
 
-        containerView2.fillContainer(40.0)
+        containerView2.fillContainer(40)
 
 
         // view that that despite being inside containerView2, will adapt to containerView1
@@ -77,7 +77,7 @@ class ViewController: UIViewController {
         containerView3.alpha = 0.5
         containerView2.addSubview(containerView3)
 
-        containerView3.fill(view: containerView1, constant: 20.0)
+        containerView3.fill(view: containerView1, constant: 20)
     }
 }
 

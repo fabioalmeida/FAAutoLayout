@@ -32,16 +32,16 @@ class DetailViewController: UIViewController {
             self.view.addSubview(newView)
 
             // add constraints
-            newView.constrainHeight(50.0)
-            newView.constrainTopSpaceToContainer(15.0)
+            newView.constrainHeight(50)
+            newView.constrainTopSpaceToContainer(15)
         }
 
         // as you can see here, these methods are not called on some UIView instance but are UIView class methods
         UIView.constrainEqualWidth(dynamicViews)
-        UIView.constrainEqualHorizontalSpacing(dynamicViews, constant: 30.0)
+        UIView.constrainEqualHorizontalSpacing(dynamicViews, constant: 30)
 
-        dynamicViews.first?.constrainLeadingSpaceToContainer(15.0)
-        dynamicViews.last?.constrainTrailingSpaceToContainer(15.0)
+        dynamicViews.first?.constrainLeadingSpaceToContainer(15)
+        dynamicViews.last?.constrainTrailingSpaceToContainer(15)
     }
 
 }
