@@ -105,12 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				AE00B90C1EF7277700DEFBC1 /* DetailViewController.swift */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				AEDC89281F01C95100911215 /* Controller */,
+				AEDC89291F01C95900911215 /* Resources */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				AEDC89271F01C94C00911215 /* View */,
 			);
 			name = "Example for FAAutoLayout";
 			path = FAAutoLayout;
@@ -149,6 +147,32 @@
 				E745FD90D58AB3EA7F245398 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		AEDC89271F01C94C00911215 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AEDC89281F01C95100911215 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE00B90C1EF7277700DEFBC1 /* DetailViewController.swift */,
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AEDC89291F01C95900911215 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		FDC43596F50553F094C64C5B /* Pods */ = {
