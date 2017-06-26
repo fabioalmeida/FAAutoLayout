@@ -27,7 +27,7 @@ class DetailViewController: UIViewController {
         for _ in 0..<dynamicNumberOfViews {
 
             let newView = UIView()
-            newView.backgroundColor = UIColor.blue
+            newView.backgroundColor = .blue
             dynamicViews.append(newView)
             self.view.addSubview(newView)
 

@@ -49,7 +49,7 @@ If you have a view that you want to add to your UIViewController and make it fil
 
 ```swift
 let backgroundView = UIView()
-backgroundView.backgroundColor = UIColor.lightGray
+backgroundView.backgroundColor = .lightGray
 self.view.addSubview(backgroundView)
 
 // with only one line of code all the 4 needed constraints are automatically added to the view
@@ -60,7 +60,7 @@ For adding a view with a fixed width and height that sits on the top-left corner
 
 ```swift
 let topLeftView = UIView()
-topLeftView.backgroundColor = UIColor.blue
+topLeftView.backgroundColor = .blue
 backgroundView.addSubview(topLeftView)
 
 topLeftView.constrainLeadingSpaceToContainer()
@@ -73,7 +73,7 @@ If we want to define relations between two views on the same hierarchy level (i.
 
 ```swift
 let topRightView = UIView()
-topRightView.backgroundColor = UIColor.red
+topRightView.backgroundColor = .red
 backgroundView.addSubview(topRightView)
 
 topRightView.constrainHorizontalSpacing(toView: topLeftView, constant: 20.0)
@@ -97,7 +97,7 @@ On the previous examples, lots of constraints were being added in relation with 
 ```swift
 // container view that will sit below topLeftView
 let containerView1 = UIView()
-containerView1.backgroundColor = UIColor.green
+containerView1.backgroundColor = .green
 backgroundView.addSubview(containerView1)
 
 containerView1.constrainWidth(200.0)
@@ -107,14 +107,14 @@ containerView1.constrainLeadingSpaceToContainer(10.0)
 
 // view that will adapt to containerView1
 let containerView2 = UIView()
-containerView2.backgroundColor = UIColor.black
+containerView2.backgroundColor = .black
 containerView1.addSubview(containerView2)
 
 containerView2.fillContainer(40.0)
 
 // view that that despite being inside containerView2, will adapt to containerView1
 let containerView3 = UIView()
-containerView3.backgroundColor = UIColor.orange
+containerView3.backgroundColor = .orange
 containerView3.alpha = 0.5
 containerView2.addSubview(containerView3)
 
@@ -131,7 +131,7 @@ var dynamicViews = [UIView]()
 for _ in 0..<dynamicNumberOfViews {
 
     let newView = UIView()
-    newView.backgroundColor = UIColor.blue
+    newView.backgroundColor = .blue
     dynamicViews.append(newView)
     self.view.addSubview(newView)
 

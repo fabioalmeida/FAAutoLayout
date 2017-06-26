@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
         // background view that adjusts the container view without any padding
         let backgroundView = UIView()
-        backgroundView.backgroundColor = UIColor.lightGray
+        backgroundView.backgroundColor = .lightGray
         self.view.addSubview(backgroundView)
         self.view.sendSubview(toBack: backgroundView)
 
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
 
         // view which sits on the top-left corner of the background view, with a fixed width and height
         let topLeftView = UIView()
-        topLeftView.backgroundColor = UIColor.blue
+        topLeftView.backgroundColor = .blue
         backgroundView.addSubview(topLeftView)
 
         topLeftView.constrainLeadingSpaceToContainer()
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
 
         // view that is positioned on the right on relation with topLeftView
         let topRightView = UIView()
-        topRightView.backgroundColor = UIColor.red
+        topRightView.backgroundColor = .red
         backgroundView.addSubview(topRightView)
 
         topRightView.constrainTopSpaceToContainer(10.0)
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
 
         // container view that will sit below topLeftView
         let containerView1 = UIView()
-        containerView1.backgroundColor = UIColor.green
+        containerView1.backgroundColor = .green
         backgroundView.addSubview(containerView1)
 
         containerView1.constrainWidth(200.0)
@@ -65,7 +65,7 @@ class ViewController: UIViewController {
 
         // view that will adapt to containerView1
         let containerView2 = UIView()
-        containerView2.backgroundColor = UIColor.black
+        containerView2.backgroundColor = .black
         containerView1.addSubview(containerView2)
 
         containerView2.fillContainer(40.0)
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
 
         // view that that despite being inside containerView2, will adapt to containerView1
         let containerView3 = UIView()
-        containerView3.backgroundColor = UIColor.orange
+        containerView3.backgroundColor = .orange
         containerView3.alpha = 0.5
         containerView2.addSubview(containerView3)
 
