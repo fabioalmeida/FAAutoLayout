@@ -40,7 +40,7 @@ public extension UIView {
     /// Constrains the view leading space to a container view (e.g. the view **superview** or another view higher in the hierarchy).
     ///
     /// This contraint is added directly to the container view and is returned for future manipulation (if needed).
-    /// This method should be used when you wish to define a leading space relation between a view that is above the direct
+    /// This method should be used when you wish to define a leading space relation to a view that is above the direct
     /// container view hierarchy, for instance, `self.superview.superview`.
     /// If you wish to just define a relation between the view and the direct superview, please refer to `constrainLeadingSpaceToContainer()`.
     ///
