@@ -49,7 +49,7 @@ If you have a view that you want to add to your UIViewController and make it fil
 
 ```swift
 let backgroundView = UIView()
-backgroundView.backgroundColor = UIColor.lightGray
+backgroundView.backgroundColor = .lightGray
 self.view.addSubview(backgroundView)
 
 // with only one line of code all the 4 needed constraints are automatically added to the view
@@ -60,26 +60,26 @@ For adding a view with a fixed width and height that sits on the top-left corner
 
 ```swift
 let topLeftView = UIView()
-topLeftView.backgroundColor = UIColor.blue
+topLeftView.backgroundColor = .blue
 backgroundView.addSubview(topLeftView)
 
 topLeftView.constrainLeadingSpaceToContainer()
-topLeftView.constrainTopSpaceToContainer(10.0)
-topLeftView.constrainWidth(150.0)
-topLeftView.constrainHeight(45.0)
+topLeftView.constrainTopSpaceToContainer(10)
+topLeftView.constrainWidth(150)
+topLeftView.constrainHeight(45)
 ```
 
 If we want to define relations between two views on the same hierarchy level (i.e. share the same `superview`) we can define, for instance, one horizontal spacing constraint between them:
 
 ```swift
 let topRightView = UIView()
-topRightView.backgroundColor = UIColor.red
+topRightView.backgroundColor = .red
 backgroundView.addSubview(topRightView)
 
-topRightView.constrainHorizontalSpacing(toView: topLeftView, constant: 20.0)
-topRightView.constrainTopSpaceToContainer(10.0)
-topRightView.constrainTrailingSpaceToContainer(30.0)
-topRightView.constrainEqualHeight(toView: topLeftView, constant: 0, relation: .equal, priority: UILayoutPriorityRequired, multiplier: 2.0)
+topRightView.constrainHorizontalSpacing(toView: topLeftView, constant: 20)
+topRightView.constrainTopSpaceToContainer(10)
+topRightView.constrainTrailingSpaceToContainer(30)
+topRightView.constrainEqualHeight(toView: topLeftView, constant: 0, relation: .equal, priority: UILayoutPriorityRequired, multiplier: 2)
 ```
 
 Note that in the previous example the height was not a fixed value but calculated using the first view height and a multiplier.
@@ -87,9 +87,9 @@ Note that in the previous example the height was not a fixed value but calculate
 It's always possible to store an added constraint to be later changed:
 
 ```swift
-let heightConstraint = topLeftView.constrainHeight(45.0)
+let heightConstraint = topLeftView.constrainHeight(45)
 // (...)
-heightConstraint.constant = 80.0
+heightConstraint.constant = 80
 ```
 
 On the previous examples, lots of constraints were being added in relation with a container view. Nevertheless, it is also possible to create these relations to other view that is above on the container view hierarchy chain:
@@ -97,30 +97,34 @@ On the previous examples, lots of constraints were being added in relation with 
 ```swift
 // container view that will sit below topLeftView
 let containerView1 = UIView()
-containerView1.backgroundColor = UIColor.green
+containerView1.backgroundColor = .green
 backgroundView.addSubview(containerView1)
 
-containerView1.constrainWidth(200.0)
-containerView1.constrainHeight(200.0)
-containerView1.constrainVerticalSpacing(toView: topLeftView, constant: 100.0)
-containerView1.constrainLeadingSpaceToContainer(10.0)
+containerView1.constrainWidth(200)
+containerView1.constrainHeight(200)
+containerView1.constrainVerticalSpacing(toView: topLeftView, constant: 100)
+containerView1.constrainLeadingSpaceToContainer(10)
 
 // view that will adapt to containerView1
 let containerView2 = UIView()
-containerView2.backgroundColor = UIColor.black
+containerView2.backgroundColor = .black
 containerView1.addSubview(containerView2)
 
-containerView2.fillContainer(40.0)
+containerView2.fillContainer(40)
 
 // view that that despite being inside containerView2, will adapt to containerView1
 let containerView3 = UIView()
-containerView3.backgroundColor = UIColor.orange
+containerView3.backgroundColor = .orange
 containerView3.alpha = 0.5
 containerView2.addSubview(containerView3)
 
 // here, even though containerView2 is the container for containerView3, we can make a relation to containerView1 since it the the superview of containerView2
-containerView3.fill(view: containerView1, constant: 20.0)
+containerView3.fill(view: containerView1, constant: 20)
 ```
+
+The final result would be something similar to the following image:
+
+![example1](https://user-images.githubusercontent.com/474965/27563323-c92a855c-5ac8-11e7-9ea1-3e7e933ff710.png)
 
 In some other cases we need to create our views programmatically because their number might be dynamic depending on some business logic. On the next example you can see 2 `UIView` class methods that allow to add constraints to an Array of UIViews with one single function call:
 
@@ -131,22 +135,27 @@ var dynamicViews = [UIView]()
 for _ in 0..<dynamicNumberOfViews {
 
     let newView = UIView()
-    newView.backgroundColor = UIColor.blue
+    newView.backgroundColor = .blue
     dynamicViews.append(newView)
     self.view.addSubview(newView)
 
     // add constraints
-    newView.constrainHeight(50.0)
-    newView.constrainTopSpaceToContainer(15.0)
+    newView.constrainHeight(50)
+    newView.constrainTopSpaceToContainer(15)
 }
 
 // as you can see here, these methods are not called on some UIView instance but are UIView class methods
 UIView.constrainEqualWidth(dynamicViews)
-UIView.constrainEqualHorizontalSpacing(dynamicViews, constant: 30.0)
+UIView.constrainEqualHorizontalSpacing(dynamicViews, constant: 30)
 
-dynamicViews.first?.constrainLeadingSpaceToContainer(15.0)
-dynamicViews.last?.constrainTrailingSpaceToContainer(15.0)
+dynamicViews.first?.constrainLeadingSpaceToContainer(15)
+dynamicViews.last?.constrainTrailingSpaceToContainer(15)
 ```
+
+This would create a view like the following:
+
+![example2](https://user-images.githubusercontent.com/474965/27563324-c92c0756-5ac8-11e7-94f1-8f9bdf3083d8.png)
+
 
 All these examples can be found on the repository "Examples" project.
 
@@ -176,13 +185,13 @@ myView.constrainTopSpaceToContainer()
 But you can also specify a constant if you want to add a margin:
 
 ```swift
-myView.constrainTopSpaceToContainer(20.0)
+myView.constrainTopSpaceToContainer(20)
 ```
 
 However, if you want to specify the other parameters like the `NSLayoutRelation` or `UILayoutPriority` you can also do the following in only one line:
 
 ```swift
-myView.constrainTopSpaceToContainer(20.0, relation: .greaterThanOrEqual, priority: UILayoutPriorityRequired, multiplier: 0.7)
+myView.constrainTopSpaceToContainer(20, relation: .greaterThanOrEqual, priority: UILayoutPriorityRequired, multiplier: 0.7)
 ```
 
 

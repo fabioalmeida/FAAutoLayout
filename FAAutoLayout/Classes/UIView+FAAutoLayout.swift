@@ -130,7 +130,7 @@ public extension UIView {
         let constraint = NSLayoutConstraint.widthConstraint(fromView: self, toView: nil, relation: relation, multiplier: multiplier, constant: constant)
         constraint.priority = priority;
         superview!.addConstraint(constraint)
-        
+
         return constraint;
     }
     
@@ -347,6 +347,7 @@ public extension UIView {
     }
 
     @discardableResult
+    @objc(fillView:constant:relation:priority:multiplier:)
     public func fill(view: UIView,
                      constant: CGFloat = Constants.spacing,
                      relation: NSLayoutRelation = Constants.relation,
