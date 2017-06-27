@@ -19,10 +19,10 @@ public extension UIView {
 
         validateViewHierarchy()
         let constraint = NSLayoutConstraint.heightConstraint(fromView: self, toView: nil, relation: relation, multiplier: multiplier, constant: constant)
-        constraint.priority = priority;
+        constraint.priority = priority
         superview!.addConstraint(constraint)
 
-        return constraint;
+        return constraint
     }
 
 
@@ -35,10 +35,10 @@ public extension UIView {
 
         validateViewHierarchy()
         let constraint = NSLayoutConstraint.heightConstraint(fromView: self, toView: toView, relation: relation, multiplier: multiplier, constant: constant)
-        constraint.priority = priority;
+        constraint.priority = priority
         superview!.addConstraint(constraint)
 
-        return constraint;
+        return constraint
     }
     
 

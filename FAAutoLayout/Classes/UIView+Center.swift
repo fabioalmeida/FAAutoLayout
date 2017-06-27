@@ -21,10 +21,10 @@ public extension UIView {
 
         validateViewHierarchy()
         let constraint = NSLayoutConstraint.centerHorizontallyConstraint(fromView: self, toView: superview!, relation: relation, multiplier: multiplier, constant: constant)
-        constraint.priority = priority;
+        constraint.priority = priority
         superview!.addConstraint(constraint)
 
-        return constraint;
+        return constraint
     }
 
 
@@ -37,10 +37,10 @@ public extension UIView {
 
         UIView.validateViewHierarchy(view)
         let constraint = NSLayoutConstraint.centerHorizontallyConstraint(fromView: self, toView: view, relation: relation, multiplier: multiplier, constant: constant)
-        constraint.priority = priority;
+        constraint.priority = priority
         view.superview!.addConstraint(constraint)
 
-        return constraint;
+        return constraint
     }
 
 
@@ -54,10 +54,10 @@ public extension UIView {
 
         validateViewHierarchy()
         let constraint = NSLayoutConstraint.centerVerticallyConstraint(fromView: self, toView: superview!, relation: relation, multiplier: multiplier, constant: constant)
-        constraint.priority = priority;
+        constraint.priority = priority
         superview!.addConstraint(constraint)
 
-        return constraint;
+        return constraint
     }
 
 
@@ -70,10 +70,10 @@ public extension UIView {
 
         UIView.validateViewHierarchy(view)
         let constraint = NSLayoutConstraint.centerVerticallyConstraint(fromView: self, toView: view, relation: relation, multiplier: multiplier, constant: constant)
-        constraint.priority = priority;
+        constraint.priority = priority
         view.superview!.addConstraint(constraint)
 
-        return constraint;
+        return constraint
     }
 
 
@@ -87,12 +87,12 @@ public extension UIView {
 
         validateViewHierarchy()
         let horizontalConstraint = NSLayoutConstraint.centerHorizontallyConstraint(fromView: self, toView: superview!, relation: relation, multiplier: multiplier, constant: constant)
-        horizontalConstraint.priority = priority;
+        horizontalConstraint.priority = priority
         let verticalConstraint = NSLayoutConstraint.centerVerticallyConstraint(fromView: self, toView: superview!, relation: relation, multiplier: multiplier, constant: constant)
-        verticalConstraint.priority = priority;
+        verticalConstraint.priority = priority
         superview!.addConstraints([horizontalConstraint, verticalConstraint])
 
-        return [horizontalConstraint, verticalConstraint];
+        return [horizontalConstraint, verticalConstraint]
     }
 
     @discardableResult
@@ -104,11 +104,11 @@ public extension UIView {
 
         UIView.validateViewHierarchy(view)
         let horizontalConstraint = NSLayoutConstraint.centerHorizontallyConstraint(fromView: self, toView: view, relation: relation, multiplier: multiplier, constant: constant)
-        horizontalConstraint.priority = priority;
+        horizontalConstraint.priority = priority
         let verticalConstraint = NSLayoutConstraint.centerVerticallyConstraint(fromView: self, toView: view, relation: relation, multiplier: multiplier, constant: constant)
-        verticalConstraint.priority = priority;
+        verticalConstraint.priority = priority
         view.superview!.addConstraints([horizontalConstraint, verticalConstraint])
 
-        return [horizontalConstraint, verticalConstraint];
+        return [horizontalConstraint, verticalConstraint]
     }
 }

@@ -35,12 +35,12 @@ public extension UIView {
         let trailingConstraint = NSLayoutConstraint.trailingSpaceConstraint(fromView: self, toView: view, relation: relation, multiplier: multiplier, constant: constant)
         trailingConstraint.priority = priority
         let topConstraint = NSLayoutConstraint.topSpaceConstraint(fromView: self, toView: view, relation: relation, multiplier: multiplier, constant: constant)
-        topConstraint.priority = priority;
+        topConstraint.priority = priority
         let bottomConstraint = NSLayoutConstraint.bottomSpaceConstraint(fromView: self, toView: view, relation: relation, multiplier: multiplier, constant: constant)
         bottomConstraint.priority = priority
         view.addConstraints([leadingConstraint, trailingConstraint, topConstraint, bottomConstraint])
 
-        return [leadingConstraint, trailingConstraint, topConstraint, bottomConstraint];
+        return [leadingConstraint, trailingConstraint, topConstraint, bottomConstraint]
     }
 }
 
