@@ -9,9 +9,9 @@
 import UIKit
 
 // MARK: - Internal
-extension NSLayoutConstraint {
+internal extension NSLayoutConstraint {
     
-    public class func leadingSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+    class func leadingSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
                                              multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -23,7 +23,7 @@ extension NSLayoutConstraint {
                                                    constant: c)
     }
     
-    public class func trailingSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+    class func trailingSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
                                               multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         // in trailing contraints we need to invert the views order so that we don't need to use negative constants
@@ -37,7 +37,7 @@ extension NSLayoutConstraint {
                                                    itemUsingAutoLayout: fromView)
     }
     
-    public class func topSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+    class func topSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
                                          multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -49,7 +49,7 @@ extension NSLayoutConstraint {
                                                    constant: c)
     }
     
-    public class func bottomSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+    class func bottomSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
                                             multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         // in bottom contraints we need to invert the views order so that we don't need to use negative constants
@@ -63,7 +63,7 @@ extension NSLayoutConstraint {
                                                    itemUsingAutoLayout: fromView)
     }
     
-    public class func widthConstraint(fromView: UIView, toView: UIView?, relation: NSLayoutRelation,
+    class func widthConstraint(fromView: UIView, toView: UIView?, relation: NSLayoutRelation,
                                       multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         let toAttribute = toView != nil ? NSLayoutAttribute.width : NSLayoutAttribute.notAnAttribute
@@ -77,7 +77,7 @@ extension NSLayoutConstraint {
                                                    constant: c)
     }
     
-    public class func heightConstraint(fromView: UIView, toView: UIView?, relation: NSLayoutRelation,
+    class func heightConstraint(fromView: UIView, toView: UIView?, relation: NSLayoutRelation,
                                        multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         let toAttribute = toView != nil ? NSLayoutAttribute.height : NSLayoutAttribute.notAnAttribute
@@ -91,7 +91,7 @@ extension NSLayoutConstraint {
                                                    constant: c)
     }
     
-    public class func centerHorizontallyConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+    class func centerHorizontallyConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
                                                    multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -103,7 +103,7 @@ extension NSLayoutConstraint {
                                                    constant: c)
     }
     
-    public class func centerVerticallyConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+    class func centerVerticallyConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
                                                  multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -115,7 +115,7 @@ extension NSLayoutConstraint {
                                                    constant: c)
     }
     
-    public class func horizontalSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+    class func horizontalSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
                                                 multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -127,7 +127,7 @@ extension NSLayoutConstraint {
                                                    constant: c)
     }
     
-    public class func verticalSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+    class func verticalSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
                                               multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,

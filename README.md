@@ -170,7 +170,7 @@ The main types of constraints you can add are the following:
 - Bottom
 - Width
 - Height
-- Alignment (Center/Center Vertical/Center Horizontal)
+- Center (Middle/Vertical/Horizontal)
 - Fill
 - Spacing (Vertical/Horizontal)
 
