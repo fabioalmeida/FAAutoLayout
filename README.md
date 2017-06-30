@@ -124,7 +124,7 @@ containerView3.fill(view: containerView1, constant: 20)
 
 The final result would be something similar to the following image:
 
-![example1](https://user-images.githubusercontent.com/474965/27563323-c92a855c-5ac8-11e7-9ea1-3e7e933ff710.png)
+![example1](https://user-images.githubusercontent.com/474965/27745013-ba946316-5db9-11e7-80be-b026f0ada95c.png)
 
 In some other cases we need to create our views programmatically because their number might be dynamic depending on some business logic. On the next example you can see 2 `UIView` class methods that allow to add constraints to an Array of UIViews with one single function call:
 
@@ -154,7 +154,7 @@ dynamicViews.last?.constrainTrailingSpaceToContainer(15)
 
 This would create a view like the following:
 
-![example2](https://user-images.githubusercontent.com/474965/27563324-c92c0756-5ac8-11e7-94f1-8f9bdf3083d8.png)
+![example2](https://user-images.githubusercontent.com/474965/27745014-baafc17e-5db9-11e7-988f-01a0a7a61814.png)
 
 
 All these examples can be found on the repository "Examples" project.
@@ -170,7 +170,7 @@ The main types of constraints you can add are the following:
 - Bottom
 - Width
 - Height
-- Alignment (Center/Center Vertical/Center Horizontal)
+- Center (Middle/Vertical/Horizontal)
 - Fill
 - Spacing (Vertical/Horizontal)
 

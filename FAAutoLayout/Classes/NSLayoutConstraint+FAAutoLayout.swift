@@ -9,9 +9,10 @@
 import UIKit
 
 // MARK: - Internal
-extension NSLayoutConstraint {
-    
-    public class func leadingSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+internal extension NSLayoutConstraint {
+
+    /// Helper method to facilitate the creation of leading space constraints
+    class func leadingSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
                                              multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -22,8 +23,9 @@ extension NSLayoutConstraint {
                                                    multiplier: m,
                                                    constant: c)
     }
-    
-    public class func trailingSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+
+    /// Helper method to facilitate the creation of trailing space constraints
+    class func trailingSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
                                               multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         // in trailing contraints we need to invert the views order so that we don't need to use negative constants
@@ -36,8 +38,9 @@ extension NSLayoutConstraint {
                                                    constant: c,
                                                    itemUsingAutoLayout: fromView)
     }
-    
-    public class func topSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+
+    /// Helper method to facilitate the creation of top space constraints
+    class func topSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
                                          multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -48,8 +51,9 @@ extension NSLayoutConstraint {
                                                    multiplier: m,
                                                    constant: c)
     }
-    
-    public class func bottomSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+
+    /// Helper method to facilitate the creation of bottom space constraints
+    class func bottomSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
                                             multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         // in bottom contraints we need to invert the views order so that we don't need to use negative constants
@@ -62,8 +66,9 @@ extension NSLayoutConstraint {
                                                    constant: c,
                                                    itemUsingAutoLayout: fromView)
     }
-    
-    public class func widthConstraint(fromView: UIView, toView: UIView?, relation: NSLayoutRelation,
+
+    /// Helper method to facilitate the creation of width constraints
+    class func widthConstraint(fromView: UIView, toView: UIView?, relation: NSLayoutRelation,
                                       multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         let toAttribute = toView != nil ? NSLayoutAttribute.width : NSLayoutAttribute.notAnAttribute
@@ -76,8 +81,9 @@ extension NSLayoutConstraint {
                                                    multiplier: m,
                                                    constant: c)
     }
-    
-    public class func heightConstraint(fromView: UIView, toView: UIView?, relation: NSLayoutRelation,
+
+    /// Helper method to facilitate the creation of height constraints
+    class func heightConstraint(fromView: UIView, toView: UIView?, relation: NSLayoutRelation,
                                        multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         let toAttribute = toView != nil ? NSLayoutAttribute.height : NSLayoutAttribute.notAnAttribute
@@ -90,8 +96,9 @@ extension NSLayoutConstraint {
                                                    multiplier: m,
                                                    constant: c)
     }
-    
-    public class func centerHorizontallyConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+
+    /// Helper method to facilitate the creation of horizontal centering constraints
+    class func centerHorizontallyConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
                                                    multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -102,8 +109,9 @@ extension NSLayoutConstraint {
                                                    multiplier: m,
                                                    constant: c)
     }
-    
-    public class func centerVerticallyConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+
+    /// Helper method to facilitate the creation of vertical centering constraints
+    class func centerVerticallyConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
                                                  multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -114,8 +122,9 @@ extension NSLayoutConstraint {
                                                    multiplier: m,
                                                    constant: c)
     }
-    
-    public class func horizontalSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+
+    /// Helper method to facilitate the creation of horizontal spacing constraints
+    class func horizontalSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
                                                 multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -126,8 +135,9 @@ extension NSLayoutConstraint {
                                                    multiplier: m,
                                                    constant: c)
     }
-    
-    public class func verticalSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+
+    /// Helper method to facilitate the creation of vertical spacing constraints
+    class func verticalSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
                                               multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -144,6 +154,7 @@ extension NSLayoutConstraint {
 // MARK: - Private
 fileprivate extension NSLayoutConstraint {
 
+    /// Creates the constraint and set the `translatesAutoresizingMaskIntoConstraints` attribute to false on the `fromItem`
      class func createConstraint(fromItem fromView: UIView, toItem toView: UIView?, fromAttribute: NSLayoutAttribute, toAttribute: NSLayoutAttribute,
                                  relatedBy relation: NSLayoutRelation, multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
      
@@ -156,7 +167,8 @@ fileprivate extension NSLayoutConstraint {
                                                    constant: c,
                                                    itemUsingAutoLayout: fromView)
     }
-    
+
+    /// Creates the constraint and set the `translatesAutoresizingMaskIntoConstraints` attribute to false on the `itemUsingAutoLayout`
     class func createConstraint(fromItem fromView: UIView, toItem toView: UIView?, fromAttribute: NSLayoutAttribute, toAttribute: NSLayoutAttribute,
                                 relatedBy relation: NSLayoutRelation, multiplier m: CGFloat, constant c: CGFloat, itemUsingAutoLayout: UIView?) -> NSLayoutConstraint {
         
