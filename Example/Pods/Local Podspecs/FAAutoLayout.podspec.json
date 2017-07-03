@@ -1,20 +1,20 @@
 {
   "name": "FAAutoLayout",
-  "version": "0.1.0",
-  "summary": "A short description of FAAutoLayout.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.2.0",
+  "summary": "A simple and intuitive way to create NSLayoutConstraints programmatically",
   "homepage": "https://github.com/fabioalmeida/FAAutoLayout",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "fabioalmeida": "fabio.almeida@farfetch.com"
+    "fabioalmeida": "fabio.andre.almeida@gmail.com"
   },
   "source": {
     "git": "https://github.com/fabioalmeida/FAAutoLayout.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
+  "social_media_url": "https://twitter.com/fabioacalmeida",
   "platforms": {
     "ios": "8.0"
   },
