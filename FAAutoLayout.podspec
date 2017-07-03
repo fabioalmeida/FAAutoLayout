@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'FAAutoLayout'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'A simple and intuitive way to create NSLayoutConstraints programmatically'
   s.homepage         = 'https://github.com/fabioalmeida/FAAutoLayout'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
