@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import FAAutoLayout
 
 class FAAutoLayoutTests: XCTestCase {
 
