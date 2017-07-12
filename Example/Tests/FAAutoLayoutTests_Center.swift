@@ -95,7 +95,7 @@ class FAAutoLayoutTests_Center: FAAutoLayoutTests {
         XCTAssertEqual(view1.frame.origin.y, self.view.frame.size.height/2 - height/2 + offset)
     }
 
-    func testCenterInContainer() {
+    func testCenterMiddleInContainer() {
 
         let view1 = UIView()
         self.view.addSubview(view1)
@@ -188,7 +188,7 @@ class FAAutoLayoutTests_Center: FAAutoLayoutTests {
         XCTAssertEqual(relativeInnerViewFrame?.origin.y, containerView.frame.size.height/2 - height/2)
     }
 
-    func testCenterInContainerView() {
+    func testCenterMiddleInContainerView() {
 
         let containerView = UIView()
         let outerView = UIView()
