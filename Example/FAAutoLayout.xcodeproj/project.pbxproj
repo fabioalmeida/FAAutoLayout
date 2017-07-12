@@ -18,6 +18,7 @@
 		AE14A8BE1F0B0507002D25EC /* FAAutoLayoutTests_Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE14A8BC1F0B04E2002D25EC /* FAAutoLayoutTests_Fill.swift */; };
 		AE14A8C11F0B059F002D25EC /* FAAutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE14A8BF1F0B055C002D25EC /* FAAutoLayoutTests.swift */; };
 		AE14A8C31F0B05EF002D25EC /* FAAutoLayoutTests_WidthHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE14A8C21F0B05EF002D25EC /* FAAutoLayoutTests_WidthHeight.swift */; };
+		AE8A60471F16C91B00024B77 /* FAAutoLayoutTests_Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A60451F16C84E00024B77 /* FAAutoLayoutTests_Center.swift */; };
 		AEF361891F0AF85A00CE2399 /* FAAutoLayoutTests_LTTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF361871F0AF7F600CE2399 /* FAAutoLayoutTests_LTTB.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		AE14A8BC1F0B04E2002D25EC /* FAAutoLayoutTests_Fill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAAutoLayoutTests_Fill.swift; sourceTree = "<group>"; };
 		AE14A8BF1F0B055C002D25EC /* FAAutoLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAAutoLayoutTests.swift; sourceTree = "<group>"; };
 		AE14A8C21F0B05EF002D25EC /* FAAutoLayoutTests_WidthHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAAutoLayoutTests_WidthHeight.swift; sourceTree = "<group>"; };
+		AE8A60451F16C84E00024B77 /* FAAutoLayoutTests_Center.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAAutoLayoutTests_Center.swift; sourceTree = "<group>"; };
 		AEF361871F0AF7F600CE2399 /* FAAutoLayoutTests_LTTB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAAutoLayoutTests_LTTB.swift; sourceTree = "<group>"; };
 		B5E091BF9E38B6ACC218DFBD /* Pods_FAAutoLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FAAutoLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C289AF505763E8FB48ACA6B8 /* Pods-FAAutoLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FAAutoLayout_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FAAutoLayout_Example/Pods-FAAutoLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				AE14A8BC1F0B04E2002D25EC /* FAAutoLayoutTests_Fill.swift */,
 				AEF361871F0AF7F600CE2399 /* FAAutoLayoutTests_LTTB.swift */,
 				AE14A8C21F0B05EF002D25EC /* FAAutoLayoutTests_WidthHeight.swift */,
+				AE8A60451F16C84E00024B77 /* FAAutoLayoutTests_Center.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -408,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE14A8BE1F0B0507002D25EC /* FAAutoLayoutTests_Fill.swift in Sources */,
+				AE8A60471F16C91B00024B77 /* FAAutoLayoutTests_Center.swift in Sources */,
 				AE14A8C11F0B059F002D25EC /* FAAutoLayoutTests.swift in Sources */,
 				AEF361891F0AF85A00CE2399 /* FAAutoLayoutTests_LTTB.swift in Sources */,
 				AE14A8C31F0B05EF002D25EC /* FAAutoLayoutTests_WidthHeight.swift in Sources */,
