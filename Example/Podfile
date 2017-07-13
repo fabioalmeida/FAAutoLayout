@@ -1,11 +1,14 @@
+platform :ios, '8.0'
 use_frameworks!
 
+def standard_pods
+    pod 'FAAutoLayout', :path => '../'
+end
+
 target 'FAAutoLayout_Example' do
-  pod 'FAAutoLayout', :path => '../'
+    standard_pods
+end
 
-  target 'FAAutoLayout_Tests' do
-    inherit! :search_paths
-
-    
-  end
+target 'FAAutoLayout_Tests' do
+    standard_pods
 end

@@ -13,9 +13,14 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		735760778D8938DFDC9DA382 /* Pods_FAAutoLayout_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E091BF9E38B6ACC218DFBD /* Pods_FAAutoLayout_Tests.framework */; };
 		AE00B90D1EF7277700DEFBC1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE00B90C1EF7277700DEFBC1 /* DetailViewController.swift */; };
+		AE14A8BE1F0B0507002D25EC /* FAAutoLayoutTests_Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE14A8BC1F0B04E2002D25EC /* FAAutoLayoutTests_Fill.swift */; };
+		AE14A8C11F0B059F002D25EC /* FAAutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE14A8BF1F0B055C002D25EC /* FAAutoLayoutTests.swift */; };
+		AE14A8C31F0B05EF002D25EC /* FAAutoLayoutTests_WidthHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE14A8C21F0B05EF002D25EC /* FAAutoLayoutTests_WidthHeight.swift */; };
+		AE8A60471F16C91B00024B77 /* FAAutoLayoutTests_Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A60451F16C84E00024B77 /* FAAutoLayoutTests_Center.swift */; };
+		AE8A604A1F16D28D00024B77 /* FAAutoLayoutTests_Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A60481F16D28200024B77 /* FAAutoLayoutTests_Spacing.swift */; };
+		AEF361891F0AF85A00CE2399 /* FAAutoLayoutTests_LTTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF361871F0AF7F600CE2399 /* FAAutoLayoutTests_LTTB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +45,15 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* FAAutoLayout_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FAAutoLayout_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		91418F788A67254B860F54F4 /* FAAutoLayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FAAutoLayout.podspec; path = ../FAAutoLayout.podspec; sourceTree = "<group>"; };
 		9ED77A71647F4570B3128489 /* Pods-FAAutoLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FAAutoLayout_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FAAutoLayout_Tests/Pods-FAAutoLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AE00B90C1EF7277700DEFBC1 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AE14A8BC1F0B04E2002D25EC /* FAAutoLayoutTests_Fill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAAutoLayoutTests_Fill.swift; sourceTree = "<group>"; };
+		AE14A8BF1F0B055C002D25EC /* FAAutoLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAAutoLayoutTests.swift; sourceTree = "<group>"; };
+		AE14A8C21F0B05EF002D25EC /* FAAutoLayoutTests_WidthHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAAutoLayoutTests_WidthHeight.swift; sourceTree = "<group>"; };
+		AE8A60451F16C84E00024B77 /* FAAutoLayoutTests_Center.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAAutoLayoutTests_Center.swift; sourceTree = "<group>"; };
+		AE8A60481F16D28200024B77 /* FAAutoLayoutTests_Spacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAAutoLayoutTests_Spacing.swift; sourceTree = "<group>"; };
+		AEF361871F0AF7F600CE2399 /* FAAutoLayoutTests_LTTB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAAutoLayoutTests_LTTB.swift; sourceTree = "<group>"; };
 		B5E091BF9E38B6ACC218DFBD /* Pods_FAAutoLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FAAutoLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C289AF505763E8FB48ACA6B8 /* Pods-FAAutoLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FAAutoLayout_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FAAutoLayout_Example/Pods-FAAutoLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CF3DF627B462C70A26BCB0FA /* Pods_FAAutoLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FAAutoLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,7 +135,12 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				AE14A8BF1F0B055C002D25EC /* FAAutoLayoutTests.swift */,
+				AE14A8BC1F0B04E2002D25EC /* FAAutoLayoutTests_Fill.swift */,
+				AEF361871F0AF7F600CE2399 /* FAAutoLayoutTests_LTTB.swift */,
+				AE14A8C21F0B05EF002D25EC /* FAAutoLayoutTests_WidthHeight.swift */,
+				AE8A60451F16C84E00024B77 /* FAAutoLayoutTests_Center.swift */,
+				AE8A60481F16D28200024B77 /* FAAutoLayoutTests_Spacing.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -398,7 +413,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				AE14A8BE1F0B0507002D25EC /* FAAutoLayoutTests_Fill.swift in Sources */,
+				AE8A604A1F16D28D00024B77 /* FAAutoLayoutTests_Spacing.swift in Sources */,
+				AE8A60471F16C91B00024B77 /* FAAutoLayoutTests_Center.swift in Sources */,
+				AE14A8C11F0B059F002D25EC /* FAAutoLayoutTests.swift in Sources */,
+				AEF361891F0AF85A00CE2399 /* FAAutoLayoutTests_LTTB.swift in Sources */,
+				AE14A8C31F0B05EF002D25EC /* FAAutoLayoutTests_WidthHeight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,10 +573,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4BF7C39D692A09BE81642F79 /* Pods-FAAutoLayout_Tests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -573,10 +590,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9ED77A71647F4570B3128489 /* Pods-FAAutoLayout_Tests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
