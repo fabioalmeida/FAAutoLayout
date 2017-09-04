@@ -1,5 +1,5 @@
 PODS:
-  - FAAutoLayout (0.2.1)
+  - FAAutoLayout (0.2.2-swift4)
 
 DEPENDENCIES:
   - FAAutoLayout (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  FAAutoLayout: 0195ede7a69745f430a3d4314ae9d107e5347067
+  FAAutoLayout: 7a52a9d80d354aa6315e784af6edf0433b168711
 
 PODFILE CHECKSUM: adc0f97d39550b5405667e3a58083f05e2872556
 
