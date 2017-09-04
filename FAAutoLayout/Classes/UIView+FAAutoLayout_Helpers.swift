@@ -8,20 +8,23 @@
 
 import UIKit
 
-// MARK: - Internal Helpers
-internal extension UIView {
+// MARK: - Public Helpers
+public extension UIView {
 
     // MARK: Constants
 
     /// The constants used for default values on the constraint's parameters
     enum Constants {
 
-        static let spacing : CGFloat = 0.0
-        static let multiplier: CGFloat = 1.0
-        static let relation: NSLayoutRelation = .equal
-        static let priority: UILayoutPriority = UILayoutPriorityRequired
+        public static let spacing : CGFloat = 0.0
+        public static let multiplier: CGFloat = 1.0
+        public static let relation: NSLayoutRelation = .equal
+        public static let priority: UILayoutPriority = .required
     }
-    
+}
+
+// MARK: - Internal Helpers
+internal extension UIView {
 
     // MARK: Methods
 
