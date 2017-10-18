@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/fabioacalmeida'
 
   s.ios.deployment_target = '8.0'
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 
   s.source_files = 'FAAutoLayout/Classes/**/*'
 end
