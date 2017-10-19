@@ -26,6 +26,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added width constraint.
     @discardableResult
+    @objc(constrainWidth:relation:priority:multiplier:)
     public func constrainWidth(_ constant: CGFloat,
                                relation: NSLayoutRelation = Constants.relation,
                                priority: UILayoutPriority = Constants.priority,
@@ -57,6 +58,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added width constraint.
     @discardableResult
+    @objc(constrainEqualWidthToView:constant:relation:priority:multiplier:)
     public func constrainEqualWidth(toView: UIView,
                                     constant: CGFloat = Constants.spacing,
                                     relation: NSLayoutRelation = Constants.relation,
@@ -89,6 +91,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added width constraints.
     @discardableResult
+    @objc(constrainEqualWidth:constant:relation:priority:multiplier:)
     public class func constrainEqualWidth(_ views: [UIView],
                                           constant: CGFloat = Constants.spacing,
                                           relation: NSLayoutRelation = Constants.relation,
