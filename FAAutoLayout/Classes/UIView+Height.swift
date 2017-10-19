@@ -26,6 +26,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added height constraint.
     @discardableResult
+    @objc(constrainHeight:relation:priority:multiplier:)
     public func constrainHeight(_ constant: CGFloat,
                                 relation: NSLayoutRelation = Constants.relation,
                                 priority: UILayoutPriority = Constants.priority,
@@ -57,6 +58,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added height constraint.
     @discardableResult
+    @objc(constrainEqualHeightToView:constant:relation:priority:multiplier:)
     public func constrainEqualHeight(toView: UIView,
                                      constant: CGFloat = Constants.spacing,
                                      relation: NSLayoutRelation = Constants.relation,
@@ -89,6 +91,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added height constraints.
     @discardableResult
+    @objc(constrainEqualHeight:constant:relation:priority:multiplier:)
     public class func constrainEqualHeight(_ views: [UIView],
                                            constant: CGFloat = Constants.spacing,
                                            relation: NSLayoutRelation = Constants.relation,
