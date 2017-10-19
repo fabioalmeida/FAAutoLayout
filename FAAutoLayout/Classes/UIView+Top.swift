@@ -27,6 +27,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added constraint between the two views.
     @discardableResult
+    @objc(constrainTopSpaceToContainer:relation:priority:multiplier:)
     public func constrainTopSpaceToContainer(_ constant: CGFloat = Constants.spacing,
                                              relation: NSLayoutRelation = Constants.relation,
                                              priority: UILayoutPriority = Constants.priority,
@@ -54,6 +55,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added constraint between the two views.
     @discardableResult
+    @objc(constrainTopSpaceToContainerView:constant:relation:priority:multiplier:)
     public func constrainTopSpace(toContainerView containerView: UIView,
                                   constant: CGFloat = Constants.spacing,
                                   relation: NSLayoutRelation = Constants.relation,

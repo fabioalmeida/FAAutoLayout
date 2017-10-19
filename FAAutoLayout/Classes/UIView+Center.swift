@@ -29,6 +29,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added constraint between the two views.
     @discardableResult
+    @objc(centerHorizontallyInContainer:relation:priority:multiplier:)
     public func centerHorizontallyInContainer(_ constant: CGFloat = Constants.spacing,
                                               relation: NSLayoutRelation = Constants.relation,
                                               priority: UILayoutPriority = Constants.priority,
@@ -61,6 +62,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added constraint between the two views.
     @discardableResult
+    @objc(centerHorizontallyWithView:constant:relation:priority:multiplier:)
     public func centerHorizontally(withView view: UIView,
                                    constant: CGFloat = Constants.spacing,
                                    relation: NSLayoutRelation = Constants.relation,
@@ -94,6 +96,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added constraint between the two views.
     @discardableResult
+    @objc(centerVerticallyInContainer:relation:priority:multiplier:)
     public func centerVerticallyInContainer(_ constant: CGFloat = Constants.spacing,
                                             relation: NSLayoutRelation = Constants.relation,
                                             priority: UILayoutPriority = Constants.priority,
@@ -126,6 +129,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added constraint between the two views.
     @discardableResult
+    @objc(centerVerticallyWithView:constant:relation:priority:multiplier:)
     public func centerVertically(withView view: UIView,
                                  constant: CGFloat = Constants.spacing,
                                  relation: NSLayoutRelation = Constants.relation,
@@ -159,6 +163,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added constraint between the two views in the following order: horizontal, vertical
     @discardableResult
+    @objc(centerInContainer:relation:priority:multiplier:)
     public func centerInContainer(_ constant: CGFloat = Constants.spacing,
                                   relation: NSLayoutRelation = Constants.relation,
                                   priority: UILayoutPriority = Constants.priority,
@@ -194,6 +199,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added constraint between the two views in the following order: horizontal, vertical
     @discardableResult
+    @objc(centerWithView:constant:relation:priority:multiplier:)
     public func center(withView view: UIView,
                        constant: CGFloat = Constants.spacing,
                        relation: NSLayoutRelation = Constants.relation,

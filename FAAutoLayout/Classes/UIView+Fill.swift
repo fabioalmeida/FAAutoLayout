@@ -28,6 +28,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added constraints between the two views in the following order: leading, trailing, top, bottom
     @discardableResult
+    @objc(fillContainer:relation:priority:multiplier:)
     public func fillContainer(_ constant: CGFloat = Constants.spacing,
                               relation: NSLayoutRelation = Constants.relation,
                               priority: UILayoutPriority = Constants.priority,

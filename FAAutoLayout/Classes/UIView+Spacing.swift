@@ -32,6 +32,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added constraint between the two views.
     @discardableResult
+    @objc(constrainHorizontalSpacingToView:constant:relation:priority:multiplier:)
     public func constrainHorizontalSpacing(toView view: UIView,
                                            constant: CGFloat = Constants.spacing,
                                            relation: NSLayoutRelation = Constants.relation,
@@ -65,6 +66,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added horizontal space constraints.
     @discardableResult
+    @objc(constrainEqualHorizontalSpacing:constant:relation:priority:multiplier:)
     public class func constrainEqualHorizontalSpacing(_ views: [UIView],
                                                       constant: CGFloat = Constants.spacing,
                                                       relation: NSLayoutRelation = Constants.relation,
@@ -112,6 +114,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added constraint between the two views.
     @discardableResult
+    @objc(constrainVerticalSpacingToView:constant:relation:priority:multiplier:)
     public func constrainVerticalSpacing(toView view: UIView,
                                          constant: CGFloat = Constants.spacing,
                                          relation: NSLayoutRelation = Constants.relation,
@@ -145,6 +148,7 @@ public extension UIView {
     ///   - multiplier: The multiplier applied to the second attribute participating in the constraint. The default value is 1.
     /// - Returns: The added vertical space constraints.
     @discardableResult
+    @objc(constrainEqualVerticalSpacing:constant:relation:priority:multiplier:)
     public class func constrainEqualVerticalSpacing(_ views: [UIView],
                                                     constant: CGFloat = Constants.spacing,
                                                     relation: NSLayoutRelation = Constants.relation,
