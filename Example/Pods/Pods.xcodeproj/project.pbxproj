@@ -52,7 +52,7 @@
 		0C232F64112FD38D8EBAF2D977277C12 /* UIView+Top.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Top.swift"; path = "FAAutoLayout/Classes/UIView+Top.swift"; sourceTree = "<group>"; };
 		0D045DCC5995863D7EA7CF064EC21D5E /* Pods-FAAutoLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FAAutoLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		25B3C145F2217D1F9D1956566951F286 /* FAAutoLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FAAutoLayout-dummy.m"; sourceTree = "<group>"; };
-		275A79A79EC7842318C1F51832F9F96A /* Pods_FAAutoLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FAAutoLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		275A79A79EC7842318C1F51832F9F96A /* Pods_FAAutoLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FAAutoLayout_Tests.framework; path = "Pods-FAAutoLayout_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29FC631C1C9D39F313E5F95ADB242B9A /* UIView+Width.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Width.swift"; path = "FAAutoLayout/Classes/UIView+Width.swift"; sourceTree = "<group>"; };
 		2A71A79E66DA8A900FDEA759BE643231 /* FAAutoLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FAAutoLayout.xcconfig; sourceTree = "<group>"; };
 		327E2EFA220DFBD72BE81E5886D5AE36 /* NSLayoutConstraint+FAAutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+FAAutoLayout.swift"; path = "FAAutoLayout/Classes/NSLayoutConstraint+FAAutoLayout.swift"; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		3EF3F975473480F61B325571C56681F9 /* UIView+Height.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Height.swift"; path = "FAAutoLayout/Classes/UIView+Height.swift"; sourceTree = "<group>"; };
 		4BE12F14E0301C8EF4CF1417498A79A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		531D2F0923E3BBDFA018901A8C2CFAEF /* Pods-FAAutoLayout_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FAAutoLayout_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		5D82A759C646285E8D1C22D7372BBB32 /* Pods-FAAutoLayout_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FAAutoLayout_Tests.modulemap"; sourceTree = "<group>"; };
+		5D82A759C646285E8D1C22D7372BBB32 /* Pods-FAAutoLayout_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FAAutoLayout_Tests.modulemap"; sourceTree = "<group>"; };
 		5E931237F37D9A7682F7E0CBF01C1837 /* FAAutoLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FAAutoLayout-umbrella.h"; sourceTree = "<group>"; };
 		61E536D15067132913D7CF7412491089 /* UIView+Bottom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Bottom.swift"; path = "FAAutoLayout/Classes/UIView+Bottom.swift"; sourceTree = "<group>"; };
 		6299EEA3DFFB5ACEFA3B5B8AAF95F45B /* Pods-FAAutoLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FAAutoLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,20 +70,20 @@
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		66FFC9D10D69ADA2F135160E401A1E0E /* Pods-FAAutoLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FAAutoLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
 		68B5ED5EDBFE345D9A530F2325820605 /* UIView+Leading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Leading.swift"; path = "FAAutoLayout/Classes/UIView+Leading.swift"; sourceTree = "<group>"; };
-		6B73FDAE9F057B11005E89D063A6DB90 /* FAAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FAAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B73FDAE9F057B11005E89D063A6DB90 /* FAAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FAAutoLayout.framework; path = FAAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF724B784131DB5F3DAAA427B84D116 /* UIView+Center.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Center.swift"; path = "FAAutoLayout/Classes/UIView+Center.swift"; sourceTree = "<group>"; };
 		86640D1AFF85432667C559716673F7CF /* UIView+Fill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Fill.swift"; path = "FAAutoLayout/Classes/UIView+Fill.swift"; sourceTree = "<group>"; };
 		88C3494B216B3461086D81F5388643B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C2309F910EA88609B86EF5806686C21 /* Pods-FAAutoLayout_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FAAutoLayout_Tests-dummy.m"; sourceTree = "<group>"; };
-		8EAFB8538266A3DD5D7EA934DAC8AEDE /* Pods_FAAutoLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FAAutoLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EAFB8538266A3DD5D7EA934DAC8AEDE /* Pods_FAAutoLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FAAutoLayout_Example.framework; path = "Pods-FAAutoLayout_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90FFDBDD97B1BC4EE1D6BD8D05CB15E2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A4FDC39B1D166EE4EF04F91ABDFDBBAA /* Pods-FAAutoLayout_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FAAutoLayout_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AA4EA8AADC88AF89E3E202AEB4852298 /* UIView+Trailing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Trailing.swift"; path = "FAAutoLayout/Classes/UIView+Trailing.swift"; sourceTree = "<group>"; };
 		AB3023D294D2572B86A76F81798D9963 /* Pods-FAAutoLayout_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FAAutoLayout_Example-dummy.m"; sourceTree = "<group>"; };
-		AB8A84CB553CFC57FD8DC70F2E3D6314 /* FAAutoLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FAAutoLayout.modulemap; sourceTree = "<group>"; };
+		AB8A84CB553CFC57FD8DC70F2E3D6314 /* FAAutoLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FAAutoLayout.modulemap; sourceTree = "<group>"; };
 		ABD9A9FBEA9226FFEFF0F1C1D7D5DA63 /* Pods-FAAutoLayout_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FAAutoLayout_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		B54BF83826E0EDD6FFA7067F7A2744D4 /* Pods-FAAutoLayout_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FAAutoLayout_Example.modulemap"; sourceTree = "<group>"; };
+		B54BF83826E0EDD6FFA7067F7A2744D4 /* Pods-FAAutoLayout_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FAAutoLayout_Example.modulemap"; sourceTree = "<group>"; };
 		D0C77E95571232694A7BDF3E85535840 /* Pods-FAAutoLayout_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FAAutoLayout_Example-frameworks.sh"; sourceTree = "<group>"; };
 		D465180CB3E75C8EB3C3792856DF0E76 /* FAAutoLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FAAutoLayout-prefix.pch"; sourceTree = "<group>"; };
 		DE24CF1D4D6D3B7395546EA2C9BB2AE2 /* UIView+Spacing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Spacing.swift"; path = "FAAutoLayout/Classes/UIView+Spacing.swift"; sourceTree = "<group>"; };
@@ -334,17 +334,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					5A6E67A41CE58B4C0C57269F57014674 = {
-						LastSwiftMigration = 0830;
-					};
-					E578E13BE49D69B9EF0282FCF3454E70 = {
-						LastSwiftMigration = 0830;
-					};
-					F54AEB89ACAE77F01EE195316F2B6A6D = {
-						LastSwiftMigration = 0830;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -419,6 +408,69 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		011B2A453FD709A3F506B88E905159CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A71A79E66DA8A900FDEA759BE643231 /* FAAutoLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FAAutoLayout/FAAutoLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FAAutoLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FAAutoLayout/FAAutoLayout.modulemap";
+				PRODUCT_NAME = FAAutoLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		574AC0BD47FB446E318C5B349C6484CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A71A79E66DA8A900FDEA759BE643231 /* FAAutoLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FAAutoLayout/FAAutoLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FAAutoLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FAAutoLayout/FAAutoLayout.modulemap";
+				PRODUCT_NAME = FAAutoLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		6621B8F15C83561274C326C2400BAD8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D045DCC5995863D7EA7CF064EC21D5E /* Pods-FAAutoLayout_Example.debug.xcconfig */;
@@ -447,7 +499,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -481,44 +532,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		A09AAF81A13C48D67C1EE892DB565BB9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A71A79E66DA8A900FDEA759BE643231 /* FAAutoLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FAAutoLayout/FAAutoLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FAAutoLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FAAutoLayout/FAAutoLayout.modulemap";
-				PRODUCT_NAME = FAAutoLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		A934477110F66C80CB3DDAA58229027F /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -547,7 +566,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -638,44 +656,11 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		DA1252F0D0586F426C94E23B593B9CF2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A71A79E66DA8A900FDEA759BE643231 /* FAAutoLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FAAutoLayout/FAAutoLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FAAutoLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FAAutoLayout/FAAutoLayout.modulemap";
-				PRODUCT_NAME = FAAutoLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -761,8 +746,8 @@
 		825E134A29D837830C1461E58F28EF16 /* Build configuration list for PBXNativeTarget "FAAutoLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A09AAF81A13C48D67C1EE892DB565BB9 /* Debug */,
-				DA1252F0D0586F426C94E23B593B9CF2 /* Release */,
+				574AC0BD47FB446E318C5B349C6484CC /* Debug */,
+				011B2A453FD709A3F506B88E905159CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

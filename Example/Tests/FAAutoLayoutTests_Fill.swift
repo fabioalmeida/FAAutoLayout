@@ -89,7 +89,7 @@ class FAAutoLayoutTests_Fill: FAAutoLayoutTests {
 
         let v2padding: CGFloat = 10.0
         let v2leading: CGFloat = 5.0
-        view2.fill(view: self.view, constant: v2padding, relation: .lessThanOrEqual, priority: UILayoutPriorityDefaultHigh)
+        view2.fill(view: self.view, constant: v2padding, relation: .lessThanOrEqual, priority: .defaultHigh)
         view2.constrainLeadingSpace(toContainerView: self.view, constant: v2leading)
 
         self.view.layoutIfNeeded()
@@ -126,7 +126,7 @@ class FAAutoLayoutTests_Fill: FAAutoLayoutTests {
 
         let v2padding: CGFloat = 10.0
         let v2leading: CGFloat = 17.0
-        view2.fill(view: self.view, constant: v2padding, relation: .equal, priority: UILayoutPriorityDefaultHigh)
+        view2.fill(view: self.view, constant: v2padding, relation: .equal, priority: .defaultHigh)
         view2.constrainLeadingSpace(toContainerView: self.view, constant: v2leading)
 
         self.view.layoutIfNeeded()

@@ -86,7 +86,7 @@ class FAAutoLayoutTests_LTTB: FAAutoLayoutTests {
         let padding: CGFloat = 15.0
         let multiplier: CGFloat = 0.2
 
-        view1.constrainLeadingSpaceToContainer(leading, relation: .equal, priority: UILayoutPriorityDefaultHigh, multiplier: multiplier)
+        view1.constrainLeadingSpaceToContainer(leading, relation: .equal, priority: .defaultHigh, multiplier: multiplier)
         view1.constrainTrailingSpaceToContainer(padding)
         view1.constrainTopSpaceToContainer(padding)
         view1.constrainBottomSpaceToContainer(padding)

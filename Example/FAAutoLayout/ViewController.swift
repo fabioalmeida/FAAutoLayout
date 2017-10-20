@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         topRightView.constrainTopSpaceToContainer(10)
         topRightView.constrainTrailingSpaceToContainer(30)
         topRightView.constrainHorizontalSpacing(toView: topLeftView, constant: 20)
-        topRightView.constrainEqualHeight(toView: topLeftView, constant: 0, relation: .equal, priority: UILayoutPriorityRequired, multiplier: 2)
+        topRightView.constrainEqualHeight(toView: topLeftView, constant: 0, relation: .equal, priority: .required, multiplier: 2)
 
 
         // container view that will sit below topLeftView

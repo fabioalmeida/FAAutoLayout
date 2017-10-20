@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'FAAutoLayout'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'A simple and intuitive way to create NSLayoutConstraints programmatically'
   s.homepage         = 'https://github.com/fabioalmeida/FAAutoLayout'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/fabioacalmeida'
 
   s.ios.deployment_target = '8.0'
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
   s.source_files = 'FAAutoLayout/Classes/**/*'
 end
