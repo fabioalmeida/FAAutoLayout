@@ -2,6 +2,7 @@
 
 [![CI Status](http://img.shields.io/travis/fabioalmeida/FAAutoLayout.svg?style=flat)](https://travis-ci.org/fabioalmeida/FAAutoLayout)
 [![Version](https://img.shields.io/cocoapods/v/FAAutoLayout.svg?style=flat)](http://cocoapods.org/pods/FAAutoLayout)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/FAAutoLayout.svg?style=flat)](http://cocoapods.org/pods/FAAutoLayout)
 [![Platform](https://img.shields.io/cocoapods/p/FAAutoLayout.svg?style=flat)](http://cocoapods.org/pods/FAAutoLayout)
 
@@ -22,6 +23,8 @@ The minimum requirements needed to use `FAAutoLayout` are:
 
 ## Installation
 
+### CocoaPods
+
 You can use [CocoaPods](http://cocoapods.org) to add `FAAutoLayout` to your project. To install it, simply specify it in your **Podfile**:
 
 ```ruby
@@ -30,11 +33,24 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'TargetName' do
-  pod 'FAAutoLayout'
+  pod 'FAAutoLayout', '~> 0.4.1'
 end
 ```
 
-After specifying the new dependency on the podfile, just run `pod install` to make sure you install the latest version of the library.
+After specifying the new dependency on the Podfile, just run `pod install` to make sure you install the latest version of the library.
+
+
+### Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+
+To integrate `FAAutoLayout` into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "fabioameida/FAAutoLayout" ~> 0.4.1
+```
+
+Run `carthage update` to build the framework and drag the built `FAAutoLayout.framework` into your Xcode project.
 
 
 ## Usage
