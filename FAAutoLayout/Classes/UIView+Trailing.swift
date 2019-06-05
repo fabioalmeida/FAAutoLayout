@@ -28,10 +28,10 @@ public extension UIView {
     /// - Returns: The added constraint between the two views.
     @discardableResult
     @objc(constrainTrailingSpaceToContainer:relation:priority:multiplier:)
-    public func constrainTrailingSpaceToContainer(_ constant: CGFloat = Constants.spacing,
-                                                  relation: NSLayoutRelation = Constants.relation,
-                                                  priority: UILayoutPriority = Constants.priority,
-                                                  multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
+    func constrainTrailingSpaceToContainer(_ constant: CGFloat = Constants.spacing,
+                                           relation: NSLayoutConstraint.Relation = Constants.relation,
+                                           priority: UILayoutPriority = Constants.priority,
+                                           multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
 
         validateViewHierarchy()
         return constrainTrailingSpace(toContainerView: superview!, constant: constant, relation: relation, priority: priority, multiplier: multiplier)
@@ -57,11 +57,11 @@ public extension UIView {
     /// - Returns: The added constraint between the two views.
     @discardableResult
     @objc(constrainTrailingSpaceToContainerView:constant:relation:priority:multiplier:)
-    public func constrainTrailingSpace(toContainerView containerView: UIView,
-                                       constant: CGFloat = Constants.spacing,
-                                       relation: NSLayoutRelation = Constants.relation,
-                                       priority: UILayoutPriority = Constants.priority,
-                                       multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
+    func constrainTrailingSpace(toContainerView containerView: UIView,
+                                constant: CGFloat = Constants.spacing,
+                                relation: NSLayoutConstraint.Relation = Constants.relation,
+                                priority: UILayoutPriority = Constants.priority,
+                                multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
 
         let constraint = NSLayoutConstraint.trailingSpaceConstraint(fromView: self, toView: containerView, relation: relation, multiplier: multiplier, constant: constant)
         constraint.priority = priority

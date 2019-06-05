@@ -18,7 +18,7 @@ public extension UIView {
 
         public static let spacing : CGFloat = 0.0
         public static let multiplier: CGFloat = 1.0
-        public static let relation: NSLayoutRelation = .equal
+        public static let relation: NSLayoutConstraint.Relation = .equal
         public static let priority: UILayoutPriority = .required
     }
 }

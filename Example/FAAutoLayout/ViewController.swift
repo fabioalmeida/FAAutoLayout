@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         let backgroundView = UIView()
         backgroundView.backgroundColor = .lightGray
         self.view.addSubview(backgroundView)
-        self.view.sendSubview(toBack: backgroundView)
+        self.view.sendSubviewToBack(backgroundView)
 
         backgroundView.fillContainer()
 

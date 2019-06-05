@@ -26,7 +26,7 @@ class FAAutoLayoutTests_WidthHeight: FAAutoLayoutTests {
         let view1 = UIView()
         self.view.addSubview(view1)
 
-        let width: CGFloat = 53.5
+        let width: CGFloat = 54
         let height: CGFloat = 37
 
         view1.constrainLeadingSpaceToContainer()
@@ -48,7 +48,7 @@ class FAAutoLayoutTests_WidthHeight: FAAutoLayoutTests {
         let view1 = UIView()
         self.view.addSubview(view1)
 
-        let width: CGFloat = 53.5
+        let width: CGFloat = 54
         let height: CGFloat = 37
 
         view1.constrainLeadingSpaceToContainer()

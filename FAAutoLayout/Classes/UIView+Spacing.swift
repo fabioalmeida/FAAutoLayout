@@ -33,11 +33,11 @@ public extension UIView {
     /// - Returns: The added constraint between the two views.
     @discardableResult
     @objc(constrainHorizontalSpacingToView:constant:relation:priority:multiplier:)
-    public func constrainHorizontalSpacing(toView view: UIView,
-                                           constant: CGFloat = Constants.spacing,
-                                           relation: NSLayoutRelation = Constants.relation,
-                                           priority: UILayoutPriority = Constants.priority,
-                                           multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
+    func constrainHorizontalSpacing(toView view: UIView,
+                                    constant: CGFloat = Constants.spacing,
+                                    relation: NSLayoutConstraint.Relation = Constants.relation,
+                                    priority: UILayoutPriority = Constants.priority,
+                                    multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
 
         validateViewHierarchy()
         let constraint = NSLayoutConstraint.horizontalSpaceConstraint(fromView: self, toView: view, relation: relation, multiplier: multiplier, constant: constant)
@@ -67,11 +67,11 @@ public extension UIView {
     /// - Returns: The added horizontal space constraints.
     @discardableResult
     @objc(constrainEqualHorizontalSpacing:constant:relation:priority:multiplier:)
-    public class func constrainEqualHorizontalSpacing(_ views: [UIView],
-                                                      constant: CGFloat = Constants.spacing,
-                                                      relation: NSLayoutRelation = Constants.relation,
-                                                      priority: UILayoutPriority = Constants.priority,
-                                                      multiplier: CGFloat = Constants.multiplier) -> [NSLayoutConstraint] {
+    class func constrainEqualHorizontalSpacing(_ views: [UIView],
+                                               constant: CGFloat = Constants.spacing,
+                                               relation: NSLayoutConstraint.Relation = Constants.relation,
+                                               priority: UILayoutPriority = Constants.priority,
+                                               multiplier: CGFloat = Constants.multiplier) -> [NSLayoutConstraint] {
 
         validateNumberOfViews(views)
         var constraints = [NSLayoutConstraint]()
@@ -115,11 +115,11 @@ public extension UIView {
     /// - Returns: The added constraint between the two views.
     @discardableResult
     @objc(constrainVerticalSpacingToView:constant:relation:priority:multiplier:)
-    public func constrainVerticalSpacing(toView view: UIView,
-                                         constant: CGFloat = Constants.spacing,
-                                         relation: NSLayoutRelation = Constants.relation,
-                                         priority: UILayoutPriority = Constants.priority,
-                                         multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
+    func constrainVerticalSpacing(toView view: UIView,
+                                  constant: CGFloat = Constants.spacing,
+                                  relation: NSLayoutConstraint.Relation = Constants.relation,
+                                  priority: UILayoutPriority = Constants.priority,
+                                  multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
 
         validateViewHierarchy()
         let constraint = NSLayoutConstraint.verticalSpaceConstraint(fromView: self, toView: view, relation: relation, multiplier: multiplier, constant: constant)
@@ -149,11 +149,11 @@ public extension UIView {
     /// - Returns: The added vertical space constraints.
     @discardableResult
     @objc(constrainEqualVerticalSpacing:constant:relation:priority:multiplier:)
-    public class func constrainEqualVerticalSpacing(_ views: [UIView],
-                                                    constant: CGFloat = Constants.spacing,
-                                                    relation: NSLayoutRelation = Constants.relation,
-                                                    priority: UILayoutPriority = Constants.priority,
-                                                    multiplier: CGFloat = Constants.multiplier) -> [NSLayoutConstraint] {
+    class func constrainEqualVerticalSpacing(_ views: [UIView],
+                                             constant: CGFloat = Constants.spacing,
+                                             relation: NSLayoutConstraint.Relation = Constants.relation,
+                                             priority: UILayoutPriority = Constants.priority,
+                                             multiplier: CGFloat = Constants.multiplier) -> [NSLayoutConstraint] {
 
         validateNumberOfViews(views)
         var constraints = [NSLayoutConstraint]()
