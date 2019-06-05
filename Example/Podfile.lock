@@ -1,5 +1,5 @@
 PODS:
-  - FAAutoLayout (0.4.1)
+  - FAAutoLayout (0.5.0)
 
 DEPENDENCIES:
   - FAAutoLayout (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FAAutoLayout: cf633d5261a37b05e0f06503d0667240bd5970e7
+  FAAutoLayout: a2757969a07d2146fc70226e925684c15197d4b1
 
 PODFILE CHECKSUM: adc0f97d39550b5405667e3a58083f05e2872556
 
