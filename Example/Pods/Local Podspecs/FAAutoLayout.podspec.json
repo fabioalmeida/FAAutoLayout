@@ -1,6 +1,6 @@
 {
   "name": "FAAutoLayout",
-  "version": "0.2.3-swift4",
+  "version": "0.4.1",
   "summary": "A simple and intuitive way to create NSLayoutConstraints programmatically",
   "homepage": "https://github.com/fabioalmeida/FAAutoLayout",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/fabioalmeida/FAAutoLayout.git",
-    "tag": "0.2.3-swift4"
+    "tag": "0.4.1"
   },
   "social_media_url": "https://twitter.com/fabioacalmeida",
   "platforms": {

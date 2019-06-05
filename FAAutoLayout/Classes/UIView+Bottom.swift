@@ -28,10 +28,10 @@ public extension UIView {
     /// - Returns: The added constraint between the two views.
     @discardableResult
     @objc(constrainBottomSpaceToContainer:relation:priority:multiplier:)
-    public func constrainBottomSpaceToContainer(_ constant: CGFloat = Constants.spacing,
-                                                relation: NSLayoutRelation = Constants.relation,
-                                                priority: UILayoutPriority = Constants.priority,
-                                                multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
+    func constrainBottomSpaceToContainer(_ constant: CGFloat = Constants.spacing,
+                                         relation: NSLayoutConstraint.Relation = Constants.relation,
+                                         priority: UILayoutPriority = Constants.priority,
+                                         multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
 
         validateViewHierarchy()
         return constrainBottomSpace(toContainerView: superview!, constant: constant, relation: relation, priority: priority, multiplier: multiplier)
@@ -57,11 +57,11 @@ public extension UIView {
     /// - Returns: The added constraint between the two views.
     @discardableResult
     @objc(constrainBottomSpaceToContainerView:constant:relation:priority:multiplier:)
-    public func constrainBottomSpace(toContainerView containerView: UIView,
-                                     constant: CGFloat = Constants.spacing,
-                                     relation: NSLayoutRelation = Constants.relation,
-                                     priority: UILayoutPriority = Constants.priority,
-                                     multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
+    func constrainBottomSpace(toContainerView containerView: UIView,
+                              constant: CGFloat = Constants.spacing,
+                              relation: NSLayoutConstraint.Relation = Constants.relation,
+                              priority: UILayoutPriority = Constants.priority,
+                              multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
 
         let constraint = NSLayoutConstraint.bottomSpaceConstraint(fromView: self, toView: containerView, relation: relation, multiplier: multiplier, constant: constant)
         constraint.priority = priority

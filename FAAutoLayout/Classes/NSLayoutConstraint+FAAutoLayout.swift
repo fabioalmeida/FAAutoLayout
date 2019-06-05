@@ -12,7 +12,7 @@ import UIKit
 internal extension NSLayoutConstraint {
 
     /// Helper method to facilitate the creation of leading space constraints
-    class func leadingSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+    class func leadingSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutConstraint.Relation,
                                              multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -25,7 +25,7 @@ internal extension NSLayoutConstraint {
     }
 
     /// Helper method to facilitate the creation of trailing space constraints
-    class func trailingSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+    class func trailingSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutConstraint.Relation,
                                               multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         // in trailing contraints we need to invert the views order so that we don't need to use negative constants
@@ -40,7 +40,7 @@ internal extension NSLayoutConstraint {
     }
 
     /// Helper method to facilitate the creation of top space constraints
-    class func topSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+    class func topSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutConstraint.Relation,
                                          multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -53,7 +53,7 @@ internal extension NSLayoutConstraint {
     }
 
     /// Helper method to facilitate the creation of bottom space constraints
-    class func bottomSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+    class func bottomSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutConstraint.Relation,
                                             multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         // in bottom contraints we need to invert the views order so that we don't need to use negative constants
@@ -68,10 +68,10 @@ internal extension NSLayoutConstraint {
     }
 
     /// Helper method to facilitate the creation of width constraints
-    class func widthConstraint(fromView: UIView, toView: UIView?, relation: NSLayoutRelation,
+    class func widthConstraint(fromView: UIView, toView: UIView?, relation: NSLayoutConstraint.Relation,
                                       multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
-        let toAttribute = toView != nil ? NSLayoutAttribute.width : NSLayoutAttribute.notAnAttribute
+        let toAttribute = toView != nil ? NSLayoutConstraint.Attribute.width : NSLayoutConstraint.Attribute.notAnAttribute
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
                                                    toItem: toView,
@@ -83,10 +83,10 @@ internal extension NSLayoutConstraint {
     }
 
     /// Helper method to facilitate the creation of height constraints
-    class func heightConstraint(fromView: UIView, toView: UIView?, relation: NSLayoutRelation,
+    class func heightConstraint(fromView: UIView, toView: UIView?, relation: NSLayoutConstraint.Relation,
                                        multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
-        let toAttribute = toView != nil ? NSLayoutAttribute.height : NSLayoutAttribute.notAnAttribute
+        let toAttribute = toView != nil ? NSLayoutConstraint.Attribute.height : NSLayoutConstraint.Attribute.notAnAttribute
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
                                                    toItem: toView,
@@ -98,7 +98,7 @@ internal extension NSLayoutConstraint {
     }
 
     /// Helper method to facilitate the creation of horizontal centering constraints
-    class func centerHorizontallyConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+    class func centerHorizontallyConstraint(fromView: UIView, toView: UIView, relation: NSLayoutConstraint.Relation,
                                                    multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -111,7 +111,7 @@ internal extension NSLayoutConstraint {
     }
 
     /// Helper method to facilitate the creation of vertical centering constraints
-    class func centerVerticallyConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+    class func centerVerticallyConstraint(fromView: UIView, toView: UIView, relation: NSLayoutConstraint.Relation,
                                                  multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -124,7 +124,7 @@ internal extension NSLayoutConstraint {
     }
 
     /// Helper method to facilitate the creation of horizontal spacing constraints
-    class func horizontalSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+    class func horizontalSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutConstraint.Relation,
                                                 multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -137,7 +137,7 @@ internal extension NSLayoutConstraint {
     }
 
     /// Helper method to facilitate the creation of vertical spacing constraints
-    class func verticalSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutRelation,
+    class func verticalSpaceConstraint(fromView: UIView, toView: UIView, relation: NSLayoutConstraint.Relation,
                                               multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
         
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
@@ -155,8 +155,8 @@ internal extension NSLayoutConstraint {
 fileprivate extension NSLayoutConstraint {
 
     /// Creates the constraint and set the `translatesAutoresizingMaskIntoConstraints` attribute to false on the `fromItem`
-     class func createConstraint(fromItem fromView: UIView, toItem toView: UIView?, fromAttribute: NSLayoutAttribute, toAttribute: NSLayoutAttribute,
-                                 relatedBy relation: NSLayoutRelation, multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
+     class func createConstraint(fromItem fromView: UIView, toItem toView: UIView?, fromAttribute: NSLayoutConstraint.Attribute, toAttribute: NSLayoutConstraint.Attribute,
+                                 relatedBy relation: NSLayoutConstraint.Relation, multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint {
      
         return NSLayoutConstraint.createConstraint(fromItem: fromView,
                                                    toItem: toView,
@@ -169,8 +169,8 @@ fileprivate extension NSLayoutConstraint {
     }
 
     /// Creates the constraint and set the `translatesAutoresizingMaskIntoConstraints` attribute to false on the `itemUsingAutoLayout`
-    class func createConstraint(fromItem fromView: UIView, toItem toView: UIView?, fromAttribute: NSLayoutAttribute, toAttribute: NSLayoutAttribute,
-                                relatedBy relation: NSLayoutRelation, multiplier m: CGFloat, constant c: CGFloat, itemUsingAutoLayout: UIView?) -> NSLayoutConstraint {
+    class func createConstraint(fromItem fromView: UIView, toItem toView: UIView?, fromAttribute: NSLayoutConstraint.Attribute, toAttribute: NSLayoutConstraint.Attribute,
+                                relatedBy relation: NSLayoutConstraint.Relation, multiplier m: CGFloat, constant c: CGFloat, itemUsingAutoLayout: UIView?) -> NSLayoutConstraint {
         
         if let itemUsingAutoLayout = itemUsingAutoLayout {
             itemUsingAutoLayout.translatesAutoresizingMaskIntoConstraints = false

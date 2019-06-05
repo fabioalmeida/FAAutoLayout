@@ -28,10 +28,10 @@ public extension UIView {
     /// - Returns: The added constraint between the two views.
     @discardableResult
     @objc(constrainTopSpaceToContainer:relation:priority:multiplier:)
-    public func constrainTopSpaceToContainer(_ constant: CGFloat = Constants.spacing,
-                                             relation: NSLayoutRelation = Constants.relation,
-                                             priority: UILayoutPriority = Constants.priority,
-                                             multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
+    func constrainTopSpaceToContainer(_ constant: CGFloat = Constants.spacing,
+                                      relation: NSLayoutConstraint.Relation = Constants.relation,
+                                      priority: UILayoutPriority = Constants.priority,
+                                      multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
 
         validateViewHierarchy()
         return constrainTopSpace(toContainerView: superview!, constant: constant, relation: relation, priority: priority, multiplier: multiplier)
@@ -56,11 +56,11 @@ public extension UIView {
     /// - Returns: The added constraint between the two views.
     @discardableResult
     @objc(constrainTopSpaceToContainerView:constant:relation:priority:multiplier:)
-    public func constrainTopSpace(toContainerView containerView: UIView,
-                                  constant: CGFloat = Constants.spacing,
-                                  relation: NSLayoutRelation = Constants.relation,
-                                  priority: UILayoutPriority = Constants.priority,
-                                  multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
+    func constrainTopSpace(toContainerView containerView: UIView,
+                           constant: CGFloat = Constants.spacing,
+                           relation: NSLayoutConstraint.Relation = Constants.relation,
+                           priority: UILayoutPriority = Constants.priority,
+                           multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
 
         let constraint = NSLayoutConstraint.topSpaceConstraint(fromView: self, toView: containerView, relation: relation, multiplier: multiplier, constant: constant)
         constraint.priority = priority

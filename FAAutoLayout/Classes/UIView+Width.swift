@@ -27,10 +27,10 @@ public extension UIView {
     /// - Returns: The added width constraint.
     @discardableResult
     @objc(constrainWidth:relation:priority:multiplier:)
-    public func constrainWidth(_ constant: CGFloat,
-                               relation: NSLayoutRelation = Constants.relation,
-                               priority: UILayoutPriority = Constants.priority,
-                               multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
+    func constrainWidth(_ constant: CGFloat,
+                        relation: NSLayoutConstraint.Relation = Constants.relation,
+                        priority: UILayoutPriority = Constants.priority,
+                        multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
 
         validateViewHierarchy()
         let constraint = NSLayoutConstraint.widthConstraint(fromView: self, toView: nil, relation: relation, multiplier: multiplier, constant: constant)
@@ -59,11 +59,11 @@ public extension UIView {
     /// - Returns: The added width constraint.
     @discardableResult
     @objc(constrainEqualWidthToView:constant:relation:priority:multiplier:)
-    public func constrainEqualWidth(toView: UIView,
-                                    constant: CGFloat = Constants.spacing,
-                                    relation: NSLayoutRelation = Constants.relation,
-                                    priority: UILayoutPriority = Constants.priority,
-                                    multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
+    func constrainEqualWidth(toView: UIView,
+                             constant: CGFloat = Constants.spacing,
+                             relation: NSLayoutConstraint.Relation = Constants.relation,
+                             priority: UILayoutPriority = Constants.priority,
+                             multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
 
         validateViewHierarchy()
         let constraint = NSLayoutConstraint.widthConstraint(fromView: self, toView: toView, relation: relation, multiplier: multiplier, constant: constant)
@@ -92,11 +92,11 @@ public extension UIView {
     /// - Returns: The added width constraints.
     @discardableResult
     @objc(constrainEqualWidth:constant:relation:priority:multiplier:)
-    public class func constrainEqualWidth(_ views: [UIView],
-                                          constant: CGFloat = Constants.spacing,
-                                          relation: NSLayoutRelation = Constants.relation,
-                                          priority: UILayoutPriority = Constants.priority,
-                                          multiplier: CGFloat = Constants.multiplier) -> [NSLayoutConstraint] {
+    class func constrainEqualWidth(_ views: [UIView],
+                                   constant: CGFloat = Constants.spacing,
+                                   relation: NSLayoutConstraint.Relation = Constants.relation,
+                                   priority: UILayoutPriority = Constants.priority,
+                                   multiplier: CGFloat = Constants.multiplier) -> [NSLayoutConstraint] {
 
         validateNumberOfViews(views)
         var constraints = [NSLayoutConstraint]()

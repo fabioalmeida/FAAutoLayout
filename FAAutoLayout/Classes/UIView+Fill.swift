@@ -29,10 +29,10 @@ public extension UIView {
     /// - Returns: The added constraints between the two views in the following order: leading, trailing, top, bottom
     @discardableResult
     @objc(fillContainer:relation:priority:multiplier:)
-    public func fillContainer(_ constant: CGFloat = Constants.spacing,
-                              relation: NSLayoutRelation = Constants.relation,
-                              priority: UILayoutPriority = Constants.priority,
-                              multiplier: CGFloat = Constants.multiplier) -> [NSLayoutConstraint] {
+    func fillContainer(_ constant: CGFloat = Constants.spacing,
+                       relation: NSLayoutConstraint.Relation = Constants.relation,
+                       priority: UILayoutPriority = Constants.priority,
+                       multiplier: CGFloat = Constants.multiplier) -> [NSLayoutConstraint] {
 
         validateViewHierarchy()
         return self.fill(view: superview!, constant: constant, relation: relation, priority: priority, multiplier: multiplier)
@@ -58,11 +58,11 @@ public extension UIView {
     /// - Returns: The added constraints between the two views in the following order: leading, trailing, top, bottom
     @discardableResult
     @objc(fillView:constant:relation:priority:multiplier:)
-    public func fill(view: UIView,
-                     constant: CGFloat = Constants.spacing,
-                     relation: NSLayoutRelation = Constants.relation,
-                     priority: UILayoutPriority = Constants.priority,
-                     multiplier: CGFloat = Constants.multiplier) -> [NSLayoutConstraint] {
+    func fill(view: UIView,
+              constant: CGFloat = Constants.spacing,
+              relation: NSLayoutConstraint.Relation = Constants.relation,
+              priority: UILayoutPriority = Constants.priority,
+              multiplier: CGFloat = Constants.multiplier) -> [NSLayoutConstraint] {
 
         let leadingConstraint = NSLayoutConstraint.leadingSpaceConstraint(fromView: self, toView: view, relation: relation, multiplier: multiplier, constant: constant)
         leadingConstraint.priority = priority

@@ -30,10 +30,10 @@ public extension UIView {
     /// - Returns: The added constraint between the two views.
     @discardableResult
     @objc(centerHorizontallyInContainer:relation:priority:multiplier:)
-    public func centerHorizontallyInContainer(_ constant: CGFloat = Constants.spacing,
-                                              relation: NSLayoutRelation = Constants.relation,
-                                              priority: UILayoutPriority = Constants.priority,
-                                              multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
+    func centerHorizontallyInContainer(_ constant: CGFloat = Constants.spacing,
+                                       relation: NSLayoutConstraint.Relation = Constants.relation,
+                                       priority: UILayoutPriority = Constants.priority,
+                                       multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
 
         validateViewHierarchy()
         let constraint = NSLayoutConstraint.centerHorizontallyConstraint(fromView: self, toView: superview!, relation: relation, multiplier: multiplier, constant: constant)
@@ -63,11 +63,11 @@ public extension UIView {
     /// - Returns: The added constraint between the two views.
     @discardableResult
     @objc(centerHorizontallyWithView:constant:relation:priority:multiplier:)
-    public func centerHorizontally(withView view: UIView,
-                                   constant: CGFloat = Constants.spacing,
-                                   relation: NSLayoutRelation = Constants.relation,
-                                   priority: UILayoutPriority = Constants.priority,
-                                   multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
+    func centerHorizontally(withView view: UIView,
+                            constant: CGFloat = Constants.spacing,
+                            relation: NSLayoutConstraint.Relation = Constants.relation,
+                            priority: UILayoutPriority = Constants.priority,
+                            multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
 
         UIView.validateViewHierarchy(view)
         let constraint = NSLayoutConstraint.centerHorizontallyConstraint(fromView: self, toView: view, relation: relation, multiplier: multiplier, constant: constant)
@@ -97,10 +97,10 @@ public extension UIView {
     /// - Returns: The added constraint between the two views.
     @discardableResult
     @objc(centerVerticallyInContainer:relation:priority:multiplier:)
-    public func centerVerticallyInContainer(_ constant: CGFloat = Constants.spacing,
-                                            relation: NSLayoutRelation = Constants.relation,
-                                            priority: UILayoutPriority = Constants.priority,
-                                            multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
+    func centerVerticallyInContainer(_ constant: CGFloat = Constants.spacing,
+                                     relation: NSLayoutConstraint.Relation = Constants.relation,
+                                     priority: UILayoutPriority = Constants.priority,
+                                     multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
 
         validateViewHierarchy()
         let constraint = NSLayoutConstraint.centerVerticallyConstraint(fromView: self, toView: superview!, relation: relation, multiplier: multiplier, constant: constant)
@@ -130,11 +130,11 @@ public extension UIView {
     /// - Returns: The added constraint between the two views.
     @discardableResult
     @objc(centerVerticallyWithView:constant:relation:priority:multiplier:)
-    public func centerVertically(withView view: UIView,
-                                 constant: CGFloat = Constants.spacing,
-                                 relation: NSLayoutRelation = Constants.relation,
-                                 priority: UILayoutPriority = Constants.priority,
-                                 multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
+    func centerVertically(withView view: UIView,
+                          constant: CGFloat = Constants.spacing,
+                          relation: NSLayoutConstraint.Relation = Constants.relation,
+                          priority: UILayoutPriority = Constants.priority,
+                          multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
 
         UIView.validateViewHierarchy(view)
         let constraint = NSLayoutConstraint.centerVerticallyConstraint(fromView: self, toView: view, relation: relation, multiplier: multiplier, constant: constant)
@@ -164,10 +164,10 @@ public extension UIView {
     /// - Returns: The added constraint between the two views in the following order: horizontal, vertical
     @discardableResult
     @objc(centerInContainer:relation:priority:multiplier:)
-    public func centerInContainer(_ constant: CGFloat = Constants.spacing,
-                                  relation: NSLayoutRelation = Constants.relation,
-                                  priority: UILayoutPriority = Constants.priority,
-                                  multiplier: CGFloat = Constants.multiplier) -> [NSLayoutConstraint] {
+    func centerInContainer(_ constant: CGFloat = Constants.spacing,
+                           relation: NSLayoutConstraint.Relation = Constants.relation,
+                           priority: UILayoutPriority = Constants.priority,
+                           multiplier: CGFloat = Constants.multiplier) -> [NSLayoutConstraint] {
 
         validateViewHierarchy()
         let horizontalConstraint = NSLayoutConstraint.centerHorizontallyConstraint(fromView: self, toView: superview!, relation: relation, multiplier: multiplier, constant: constant)
@@ -200,11 +200,11 @@ public extension UIView {
     /// - Returns: The added constraint between the two views in the following order: horizontal, vertical
     @discardableResult
     @objc(centerWithView:constant:relation:priority:multiplier:)
-    public func center(withView view: UIView,
-                       constant: CGFloat = Constants.spacing,
-                       relation: NSLayoutRelation = Constants.relation,
-                       priority: UILayoutPriority = Constants.priority,
-                       multiplier: CGFloat = Constants.multiplier) -> [NSLayoutConstraint] {
+    func center(withView view: UIView,
+                constant: CGFloat = Constants.spacing,
+                relation: NSLayoutConstraint.Relation = Constants.relation,
+                priority: UILayoutPriority = Constants.priority,
+                multiplier: CGFloat = Constants.multiplier) -> [NSLayoutConstraint] {
 
         UIView.validateViewHierarchy(view)
         let horizontalConstraint = NSLayoutConstraint.centerHorizontallyConstraint(fromView: self, toView: view, relation: relation, multiplier: multiplier, constant: constant)

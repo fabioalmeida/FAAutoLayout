@@ -27,10 +27,10 @@ public extension UIView {
     /// - Returns: The added height constraint.
     @discardableResult
     @objc(constrainHeight:relation:priority:multiplier:)
-    public func constrainHeight(_ constant: CGFloat,
-                                relation: NSLayoutRelation = Constants.relation,
-                                priority: UILayoutPriority = Constants.priority,
-                                multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
+    func constrainHeight(_ constant: CGFloat,
+                         relation: NSLayoutConstraint.Relation = Constants.relation,
+                         priority: UILayoutPriority = Constants.priority,
+                         multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
 
         validateViewHierarchy()
         let constraint = NSLayoutConstraint.heightConstraint(fromView: self, toView: nil, relation: relation, multiplier: multiplier, constant: constant)
@@ -59,11 +59,11 @@ public extension UIView {
     /// - Returns: The added height constraint.
     @discardableResult
     @objc(constrainEqualHeightToView:constant:relation:priority:multiplier:)
-    public func constrainEqualHeight(toView: UIView,
-                                     constant: CGFloat = Constants.spacing,
-                                     relation: NSLayoutRelation = Constants.relation,
-                                     priority: UILayoutPriority = Constants.priority,
-                                     multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
+    func constrainEqualHeight(toView: UIView,
+                              constant: CGFloat = Constants.spacing,
+                              relation: NSLayoutConstraint.Relation = Constants.relation,
+                              priority: UILayoutPriority = Constants.priority,
+                              multiplier: CGFloat = Constants.multiplier) -> NSLayoutConstraint {
 
         validateViewHierarchy()
         let constraint = NSLayoutConstraint.heightConstraint(fromView: self, toView: toView, relation: relation, multiplier: multiplier, constant: constant)
@@ -92,11 +92,11 @@ public extension UIView {
     /// - Returns: The added height constraints.
     @discardableResult
     @objc(constrainEqualHeight:constant:relation:priority:multiplier:)
-    public class func constrainEqualHeight(_ views: [UIView],
-                                           constant: CGFloat = Constants.spacing,
-                                           relation: NSLayoutRelation = Constants.relation,
-                                           priority: UILayoutPriority = Constants.priority,
-                                           multiplier: CGFloat = Constants.multiplier) -> [NSLayoutConstraint] {
+    class func constrainEqualHeight(_ views: [UIView],
+                                    constant: CGFloat = Constants.spacing,
+                                    relation: NSLayoutConstraint.Relation = Constants.relation,
+                                    priority: UILayoutPriority = Constants.priority,
+                                    multiplier: CGFloat = Constants.multiplier) -> [NSLayoutConstraint] {
 
         validateNumberOfViews(views)
         var constraints = [NSLayoutConstraint]()
